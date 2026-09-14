@@ -1,0 +1,15 @@
+[submodule "backend"]
+	path = backend
+	url = /Users/lwemho/Desktop/SDLC/.repos/backend.git
+[submodule "frontend"]
+	path = frontend
+	url = /Users/lwemho/Desktop/SDLC/.repos/frontend.git
+[submodule "docs"]
+	path = docs
+	url = /Users/lwemho/Desktop/SDLC/.repos/docs.git
+[submodule "test"]
+	path = test
+	url = /Users/lwemho/Desktop/SDLC/.repos/test.git
+[submodule "e2e"]
+	path = e2e
+	url = /Users/lwemho/Desktop/SDLC/.repos/e2e.git
