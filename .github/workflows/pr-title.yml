@@ -1,0 +1,18 @@
+# Bắt buộc PR title chứa mã spec [SPEC-XXX] — đối ứng của hook commit-msg ở local.
+name: PR title
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  check-spec-id:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kiểm tra [SPEC-XXX] trong PR title
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          printf '%s\n' "$PR_TITLE" > /tmp/pr-title.txt
+          python3 scripts/check_spec_id.py /tmp/pr-title.txt

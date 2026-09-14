@@ -1,0 +1,53 @@
+# .pre-commit-config.yaml
+#
+# Kích hoạt:
+#   pre-commit install --hook-type pre-commit --hook-type commit-msg
+#
+# fail_fast: dừng NGAY khi một hook fail, không chạy các hook còn lại.
+# Thứ tự hook bên dưới chính là thứ tự chạy: PII -> gitleaks -> lint -> commit-msg.
+fail_fast: true
+
+default_install_hook_types: [pre-commit, commit-msg]
+default_stages: [pre-commit]
+
+repos:
+  # --- 1. PII scan -----------------------------------------------------
+  - repo: local
+    hooks:
+      - id: pii-scan
+        name: "1/4 PII scan (email, SĐT, CMND/CCCD, thẻ NH)"
+        entry: scripts/pii_scan.py
+        language: python
+        types: [text]
+        exclude: |
+          (?x)^(
+            scripts/pii_scan\.py
+            |.*\.lock
+            |package-lock\.json
+          )$
+
+  # --- 2. gitleaks -----------------------------------------------------
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+        name: "2/4 gitleaks (secret, API key, token)"
+
+  # --- 3. quick lint ---------------------------------------------------
+  - repo: local
+    hooks:
+      - id: quick-lint
+        name: "3/4 quick lint (chỉ file staged)"
+        entry: scripts/quick_lint.sh
+        language: script
+        pass_filenames: true
+        types: [text]
+
+  # --- 4. commit message phải có [SPEC-XXX] ----------------------------
+  - repo: local
+    hooks:
+      - id: spec-id
+        name: "4/4 commit-msg phải có [SPEC-XXX]"
+        entry: scripts/check_spec_id.py
+        language: python
+        stages: [commit-msg]
