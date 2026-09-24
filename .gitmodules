@@ -1,15 +1,15 @@
 [submodule "backend"]
 	path = backend
-	url = git@github-nxtanh:NXT-ANH/backend.git
+	url = https://github.com/NXT-ANH/backend.git
 [submodule "frontend"]
 	path = frontend
-	url = git@github-nxtanh:NXT-ANH/frontend.git
+	url = https://github.com/NXT-ANH/frontend.git
 [submodule "docs"]
 	path = docs
-	url = git@github-nxtanh:NXT-ANH/docs.git
+	url = https://github.com/NXT-ANH/docs.git
 [submodule "test"]
 	path = test
-	url = git@github-nxtanh:NXT-ANH/test.git
+	url = https://github.com/NXT-ANH/test.git
 [submodule "e2e"]
 	path = e2e
-	url = git@github-nxtanh:NXT-ANH/e2e.git
+	url = https://github.com/NXT-ANH/e2e.git
