@@ -1,0 +1,27 @@
+# >>> ai-spector (begin)
+.ai-spector/views/
+# <<< ai-spector (end)
+
+# MCP config (contains personal tokens)
+.cursor/mcp.json
+
+# MCP config (contains personal tokens)
+.mcp.json
+
+# Kari Inspector kit — local testcase authoring scratch (JSON source; MD goes to test/testcases)
+.inspector/*
+!.inspector/config.json
+!.inspector/rules.md
+
+# Dependencies (npm install)
+node_modules/
+
+# Claude Code — cấu hình cá nhân
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+
+# ai-spector audit state — chứa email người trả lời/duyệt (answeredBy, approvedBy); repo public
+.ai-spector/.docflow/context/
+.ai-spector/.docflow/logs/

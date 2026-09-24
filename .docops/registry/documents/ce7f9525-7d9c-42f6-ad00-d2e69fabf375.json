@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "ce7f9525-7d9c-42f6-ad00-d2e69fabf375",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/9-other-requirements.md",
+  "repoDocs": {
+    "en": "docs/srs/en/9-other-requirements.md"
+  },
+  "displayName": "9-other-requirements",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.353Z",
+  "updatedAt": "2026-09-14T12:28:19.353Z"
+}

@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "files": {
+    "srs/03-use-cases/uc-01-submit-a-request": {
+      "hash": "e3afd6c633cbc6ed",
+      "docPath": "docs/srs/en/03-use-cases/uc-01-submit-a-request.md",
+      "scannedAt": "2026-09-14T12:28:27.842Z"
+    },
+    "srs/03-use-cases/uc-02-track-and-cancel-own-requests": {
+      "hash": "01694289c7201cdf",
+      "docPath": "docs/srs/en/03-use-cases/uc-02-track-and-cancel-own-requests.md",
+      "scannedAt": "2026-09-14T12:28:27.847Z"
+    },
+    "srs/03-use-cases/uc-03-approve-or-reject-a-request": {
+      "hash": "14df99775c09528b",
+      "docPath": "docs/srs/en/03-use-cases/uc-03-approve-or-reject-a-request.md",
+      "scannedAt": "2026-09-14T12:28:27.850Z"
+    },
+    "srs/03-use-cases/uc-04-amend-and-resubmit-a-rejected-request": {
+      "hash": "dcab64b2c4033d33",
+      "docPath": "docs/srs/en/03-use-cases/uc-04-amend-and-resubmit-a-rejected-request.md",
+      "scannedAt": "2026-09-14T12:28:27.853Z"
+    },
+    "srs/03-use-cases/uc-05-delegate-approval-authority": {
+      "hash": "a4d47972649c0718",
+      "docPath": "docs/srs/en/03-use-cases/uc-05-delegate-approval-authority.md",
+      "scannedAt": "2026-09-14T12:28:27.858Z"
+    },
+    "srs/03-use-cases/uc-06-view-leave-balance": {
+      "hash": "fa07d1b9cb2a22a7",
+      "docPath": "docs/srs/en/03-use-cases/uc-06-view-leave-balance.md",
+      "scannedAt": "2026-09-14T12:28:27.861Z"
+    },
+    "srs/03-use-cases/uc-07-adjust-leave-balance": {
+      "hash": "c6ebcb889d32b005",
+      "docPath": "docs/srs/en/03-use-cases/uc-07-adjust-leave-balance.md",
+      "scannedAt": "2026-09-14T12:28:27.865Z"
+    },
+    "srs/03-use-cases/uc-08-receive-notifications-and-reminders": {
+      "hash": "edc901b96eecb828",
+      "docPath": "docs/srs/en/03-use-cases/uc-08-receive-notifications-and-reminders.md",
+      "scannedAt": "2026-09-14T12:28:27.868Z"
+    },
+    "srs/03-use-cases/uc-09-view-team-leave-calendar": {
+      "hash": "d5f9752274ddd928",
+      "docPath": "docs/srs/en/03-use-cases/uc-09-view-team-leave-calendar.md",
+      "scannedAt": "2026-09-14T12:28:27.871Z"
+    },
+    "srs/03-use-cases/uc-10-search-and-filter-requests": {
+      "hash": "9f32d48f6150741a",
+      "docPath": "docs/srs/en/03-use-cases/uc-10-search-and-filter-requests.md",
+      "scannedAt": "2026-09-14T12:28:27.874Z"
+    },
+    "srs/03-use-cases/uc-11-view-and-export-reports": {
+      "hash": "d66bc2ec9d373d27",
+      "docPath": "docs/srs/en/03-use-cases/uc-11-view-and-export-reports.md",
+      "scannedAt": "2026-09-14T12:28:27.878Z"
+    },
+    "srs/03-use-cases/uc-12-manage-users-departments-and-permissions": {
+      "hash": "d6cccdc71c33e397",
+      "docPath": "docs/srs/en/03-use-cases/uc-12-manage-users-departments-and-permissions.md",
+      "scannedAt": "2026-09-14T12:28:27.881Z"
+    },
+    "srs/03-use-cases/uc-13-configure-request-types-and-approval-workflows": {
+      "hash": "db08ed3b64ef5c3d",
+      "docPath": "docs/srs/en/03-use-cases/uc-13-configure-request-types-and-approval-workflows.md",
+      "scannedAt": "2026-09-14T12:28:27.885Z"
+    },
+    "srs/03-use-cases/uc-14-configure-public-holidays": {
+      "hash": "14f0d1410fb31d78",
+      "docPath": "docs/srs/en/03-use-cases/uc-14-configure-public-holidays.md",
+      "scannedAt": "2026-09-14T12:28:27.888Z"
+    },
+    "srs/03-use-cases/uc-15-sign-in-with-company-email-account": {
+      "hash": "bf13ab05a3ab55ed",
+      "docPath": "docs/srs/en/03-use-cases/uc-15-sign-in-with-company-email-account.md",
+      "scannedAt": "2026-09-14T12:28:27.892Z"
+    },
+    "srs/04-system-features/f-01-request-submission-and-lifecycle-management": {
+      "hash": "5bf6a29a11b7a7ea",
+      "docPath": "docs/srs/en/04-system-features/f-01-request-submission-and-lifecycle-management.md",
+      "scannedAt": "2026-09-14T12:28:27.895Z"
+    },
+    "srs/04-system-features/f-02-multi-level-approval-workflow": {
+      "hash": "0662db6a8f2a1092",
+      "docPath": "docs/srs/en/04-system-features/f-02-multi-level-approval-workflow.md",
+      "scannedAt": "2026-09-14T12:28:27.899Z"
+    },
+    "srs/04-system-features/f-03-annual-leave-balance-management": {
+      "hash": "fe5c23427f3f3f11",
+      "docPath": "docs/srs/en/04-system-features/f-03-annual-leave-balance-management.md",
+      "scannedAt": "2026-09-14T12:28:27.902Z"
+    },
+    "srs/04-system-features/f-04-notification-and-reminder-service": {
+      "hash": "f5cba9783c71ff48",
+      "docPath": "docs/srs/en/04-system-features/f-04-notification-and-reminder-service.md",
+      "scannedAt": "2026-09-14T12:28:27.905Z"
+    },
+    "srs/04-system-features/f-05-leave-calendar-and-request-lookup": {
+      "hash": "404eee2c4ccaff32",
+      "docPath": "docs/srs/en/04-system-features/f-05-leave-calendar-and-request-lookup.md",
+      "scannedAt": "2026-09-14T12:28:27.908Z"
+    },
+    "srs/04-system-features/f-06-reporting-and-excel-export": {
+      "hash": "fea18d94ad6cb36c",
+      "docPath": "docs/srs/en/04-system-features/f-06-reporting-and-excel-export.md",
+      "scannedAt": "2026-09-14T12:28:27.911Z"
+    },
+    "srs/04-system-features/f-07-user-organization-and-access-management": {
+      "hash": "659f0ca721a5e9d1",
+      "docPath": "docs/srs/en/04-system-features/f-07-user-organization-and-access-management.md",
+      "scannedAt": "2026-09-14T12:28:27.914Z"
+    },
+    "srs/04-system-features/f-08-request-type-workflow-and-holiday-configuration": {
+      "hash": "ba402214b0892e14",
+      "docPath": "docs/srs/en/04-system-features/f-08-request-type-workflow-and-holiday-configuration.md",
+      "scannedAt": "2026-09-14T12:28:27.918Z"
+    },
+    "srs/1-introduction": {
+      "hash": "f095bb8173613d69",
+      "docPath": "docs/srs/en/1-introduction.md",
+      "scannedAt": "2026-09-14T12:28:27.921Z"
+    },
+    "srs/2-overall-description": {
+      "hash": "7ab5461874d59982",
+      "docPath": "docs/srs/en/2-overall-description.md",
+      "scannedAt": "2026-09-14T12:28:27.924Z"
+    },
+    "srs/3-use-cases": {
+      "hash": "ef245d3797ae953b",
+      "docPath": "docs/srs/en/3-use-cases.md",
+      "scannedAt": "2026-09-14T12:28:27.931Z"
+    },
+    "srs/4-system-features": {
+      "hash": "c947a17c5fae3fe7",
+      "docPath": "docs/srs/en/4-system-features.md",
+      "scannedAt": "2026-09-14T12:28:27.934Z"
+    },
+    "srs/5-data-requirements": {
+      "hash": "a5c749b4e4c28baf",
+      "docPath": "docs/srs/en/5-data-requirements.md",
+      "scannedAt": "2026-09-14T12:28:27.937Z"
+    },
+    "srs/6-external-interfaces": {
+      "hash": "0a32260f458a83e3",
+      "docPath": "docs/srs/en/6-external-interfaces.md",
+      "scannedAt": "2026-09-14T12:28:27.941Z"
+    },
+    "srs/7-quality-attributes": {
+      "hash": "d363dcbf9290254a",
+      "docPath": "docs/srs/en/7-quality-attributes.md",
+      "scannedAt": "2026-09-14T12:28:27.944Z"
+    },
+    "srs/8-internationalization": {
+      "hash": "2ec9da47f39b9d44",
+      "docPath": "docs/srs/en/8-internationalization.md",
+      "scannedAt": "2026-09-14T12:28:27.947Z"
+    },
+    "srs/9-other-requirements": {
+      "hash": "1c774e7eadd91004",
+      "docPath": "docs/srs/en/9-other-requirements.md",
+      "scannedAt": "2026-09-14T12:28:27.950Z"
+    }
+  }
+}

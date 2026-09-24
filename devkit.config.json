@@ -1,0 +1,27 @@
+{
+  "project_id": "SDLC",
+  "stack": "node",
+  "profile": "backend-node",
+  "require_tests": true,
+  "targets": [
+    "cursor",
+    "claude"
+  ],
+  "hub": {
+    "mode": "bundled"
+  },
+  "review_context": {
+    "final_summary_dir": ".vibe/logs/summaries"
+  },
+  "runtime_engine": "devkit",
+  "routers": [
+    "bug_fix",
+    "code_review",
+    "feature_dev",
+    "feature_with_superpowers",
+    "migration",
+    "refactor",
+    "write_docs",
+    "write_test"
+  ]
+}

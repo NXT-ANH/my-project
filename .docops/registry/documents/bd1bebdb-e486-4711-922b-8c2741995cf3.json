@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "bd1bebdb-e486-4711-922b-8c2741995cf3",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/2-overall-description.md",
+  "repoDocs": {
+    "en": "docs/srs/en/2-overall-description.md"
+  },
+  "displayName": "2-overall-description",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.351Z",
+  "updatedAt": "2026-09-14T12:28:19.351Z"
+}

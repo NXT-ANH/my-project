@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "bfab9d8c-d1c7-484a-b548-0c6279ccea1f",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/8-internationalization.md",
+  "repoDocs": {
+    "en": "docs/srs/en/8-internationalization.md"
+  },
+  "displayName": "8-internationalization",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.353Z",
+  "updatedAt": "2026-09-14T12:28:19.353Z"
+}

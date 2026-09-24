@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "904a5fcf-880a-43fd-bfa7-5742cf54fb3e",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-09-view-team-leave-calendar.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-09-view-team-leave-calendar.md"
+  },
+  "displayName": "uc-09-view-team-leave-calendar",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.349Z",
+  "updatedAt": "2026-09-14T12:28:19.349Z"
+}

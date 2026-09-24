@@ -1,0 +1,1733 @@
+{
+  "version": 1,
+  "root": "/Users/lwemho/Desktop/SDLC/my-project",
+  "documents": [
+    {
+      "documentId": "doc.srs.1-introduction",
+      "template": "1-introduction.md",
+      "output": "docs/srs/1-introduction.md",
+      "sections": [
+        {
+          "id": "sec.srs.1-introduction.l2.1.1-introduction",
+          "heading": "1. Introduction",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.1-introduction.l3.2.11-document-purpose",
+          "heading": "1.1 Document Purpose",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.1-introduction.l3.3.12-document-conventions",
+          "heading": "1.2 Document Conventions",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.srs.1-introduction.l3.4.13-project-scope",
+          "heading": "1.3 Project Scope",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.srs.1-introduction.l3.5.14-references",
+          "heading": "1.4 References",
+          "level": 3,
+          "order": 5
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.2-overall-description",
+      "template": "2-overall-description.md",
+      "output": "docs/srs/2-overall-description.md",
+      "sections": [
+        {
+          "id": "sec.srs.2-overall-description.l2.1.2-overall-description",
+          "heading": "2. Overall Description",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.2-overall-description.l3.2.21-product-perspective",
+          "heading": "2.1 Product Perspective",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.2-overall-description.l3.3.22-user-classes-and-characteristics",
+          "heading": "2.2 User Classes and Characteristics",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.srs.2-overall-description.l3.4.23-operating-environment",
+          "heading": "2.3 Operating Environment",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.srs.2-overall-description.l3.5.24-design-and-implementation-constraints",
+          "heading": "2.4 Design and Implementation Constraints",
+          "level": 3,
+          "order": 5
+        },
+        {
+          "id": "sec.srs.2-overall-description.l3.6.25-assumptions-and-dependencies",
+          "heading": "2.5 Assumptions and Dependencies",
+          "level": 3,
+          "order": 6
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.3-use-cases",
+      "template": "3-use-cases.md",
+      "output": "docs/srs/3-use-cases.md",
+      "sections": [
+        {
+          "id": "sec.srs.3-use-cases.l2.1.3-use-cases",
+          "heading": "3. Use Cases",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.3-use-cases.l3.2.31-use-case-diagrams",
+          "heading": "3.1 Use Case Diagrams",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.3-use-cases.l3.3.32-list-use-case",
+          "heading": "3.2 List Use Case",
+          "level": 3,
+          "order": 3
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.4-system-features",
+      "template": "4-system-features-list-template.md",
+      "output": "docs/srs/4-system-features.md",
+      "sections": [
+        {
+          "id": "sec.srs.4-system-features.l2.1.4-system-features",
+          "heading": "4. System Features",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.4-system-features.l3.2.41-feature-diagram-optional",
+          "heading": "4.1 Feature Diagram (Optional)",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+          "heading": "4.2 List of System Features",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.srs.4-system-features.l3.4.43-feature-relationships-optional",
+          "heading": "4.3 Feature Relationships (Optional)",
+          "level": 3,
+          "order": 4
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.5-data-requirements",
+      "template": "5-data-requirements.md",
+      "output": "docs/srs/5-data-requirements.md",
+      "sections": [
+        {
+          "id": "sec.srs.5-data-requirements.l2.1.5-data-requirements",
+          "heading": "5. Data Requirements",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.5-data-requirements.l3.2.51-logical-data-model",
+          "heading": "5.1 Logical Data Model",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.5-data-requirements.l3.3.52-data-dictionary",
+          "heading": "5.2 Data Dictionary",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.srs.5-data-requirements.l3.4.53-reports",
+          "heading": "5.3 Reports",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.srs.5-data-requirements.l3.5.54-data-acquisition-integrity-retention-and-disposal",
+          "heading": "5.4 Data Acquisition, Integrity, Retention, and Disposal",
+          "level": 3,
+          "order": 5
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.6-external-interfaces",
+      "template": "6-external-interfaces.md",
+      "output": "docs/srs/6-external-interfaces.md",
+      "sections": [
+        {
+          "id": "sec.srs.6-external-interfaces.l2.1.6-external-interface-requirements",
+          "heading": "6. External Interface Requirements",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.6-external-interfaces.l3.2.61-user-interfaces",
+          "heading": "6.1 User Interfaces",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.6-external-interfaces.l3.3.62-software-interfaces",
+          "heading": "6.2 Software Interfaces",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.srs.6-external-interfaces.l3.4.63-hardware-interfaces",
+          "heading": "6.3 Hardware Interfaces",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.srs.6-external-interfaces.l3.5.64-communications-interfaces",
+          "heading": "6.4 Communications Interfaces",
+          "level": 3,
+          "order": 5
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.7-quality-attributes",
+      "template": "7-quality-attributes.md",
+      "output": "docs/srs/7-quality-attributes.md",
+      "sections": [
+        {
+          "id": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+          "heading": "7. Non-Functional Requirements (Quality Attributes)",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.7-quality-attributes.l3.2.71-usability",
+          "heading": "7.1 Usability",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.7-quality-attributes.l3.3.72-performance",
+          "heading": "7.2 Performance",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.srs.7-quality-attributes.l3.4.73-security",
+          "heading": "7.3 Security",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.srs.7-quality-attributes.l3.5.74-safety",
+          "heading": "7.4 Safety",
+          "level": 3,
+          "order": 5
+        },
+        {
+          "id": "sec.srs.7-quality-attributes.l3.6.75-others-as-relevant",
+          "heading": "7.5 Others as relevant",
+          "level": 3,
+          "order": 6
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.8-internationalization",
+      "template": "8-internationalization.md",
+      "output": "docs/srs/8-internationalization.md",
+      "sections": [
+        {
+          "id": "sec.srs.8-internationalization.l2.1.8-internationalization-and-localization-requirements",
+          "heading": "8. Internationalization and Localization Requirements",
+          "level": 2,
+          "order": 1
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.9-other-requirements",
+      "template": "9-other-requirements.md",
+      "output": "docs/srs/9-other-requirements.md",
+      "sections": [
+        {
+          "id": "sec.srs.9-other-requirements.l2.1.9-other-requirements",
+          "heading": "9. Other Requirements",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.9-other-requirements.l3.2.91-legal-and-regulatory-compliance",
+          "heading": "9.1 Legal and Regulatory Compliance",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.9-other-requirements.l3.3.92-installation-and-configuration",
+          "heading": "9.2 Installation and Configuration",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.srs.9-other-requirements.l3.4.93-logging-and-monitoring",
+          "heading": "9.3 Logging and Monitoring",
+          "level": 3,
+          "order": 4
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.uc-detail",
+      "template": "3-use-case-detail-template.md",
+      "outputPattern": "docs/srs/03-use-cases/uc-{nn}-{slug}.md",
+      "perDomain": "useCase",
+      "sections": [
+        {
+          "id": "sec.srs.uc-detail.l2.1.use-case",
+          "heading": "Use Case:",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.2.1-use-case-overview",
+          "heading": "1. Use Case Overview",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.3.2-main-success-scenario-basic-flow",
+          "heading": "2. Main Success Scenario (Basic Flow)",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.4.3-alternative-flows",
+          "heading": "3. Alternative Flows",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.srs.uc-detail.l4.5.31-alternative-flow-a",
+          "heading": "3.1 Alternative Flow A:",
+          "level": 4,
+          "order": 5
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.6.4-exception-flows-error-handling",
+          "heading": "4. Exception Flows (Error Handling)",
+          "level": 3,
+          "order": 6
+        },
+        {
+          "id": "sec.srs.uc-detail.l4.7.41-exception-a",
+          "heading": "4.1 Exception A:",
+          "level": 4,
+          "order": 7
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.8.5-business-rules",
+          "heading": "5. Business Rules",
+          "level": 3,
+          "order": 8
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.9.6-functional-requirements",
+          "heading": "6. Functional Requirements",
+          "level": 3,
+          "order": 9
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.10.7-data-requirements",
+          "heading": "7. Data Requirements",
+          "level": 3,
+          "order": 10
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.11.8-user-interface-requirements",
+          "heading": "8. User Interface Requirements",
+          "level": 3,
+          "order": 11
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.12.9-related-use-cases",
+          "heading": "9. Related Use Cases",
+          "level": 3,
+          "order": 12
+        },
+        {
+          "id": "sec.srs.uc-detail.l3.13.10-notes",
+          "heading": "10. Notes",
+          "level": 3,
+          "order": 13
+        }
+      ]
+    },
+    {
+      "documentId": "doc.srs.feature-detail",
+      "template": "4-system-feature-detail-template.md",
+      "outputPattern": "docs/srs/04-system-features/f-{nn}-{slug}.md",
+      "perDomain": "feature",
+      "sections": [
+        {
+          "id": "sec.srs.feature-detail.l2.1.feature",
+          "heading": "Feature:",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.srs.feature-detail.l3.2.1-description",
+          "heading": "1. Description",
+          "level": 3,
+          "order": 2
+        },
+        {
+          "id": "sec.srs.feature-detail.l3.3.2-stimulusresponse-sequences",
+          "heading": "2. Stimulus/Response Sequences",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.srs.feature-detail.l3.4.3-functional-requirements",
+          "heading": "3. Functional Requirements",
+          "level": 3,
+          "order": 4
+        }
+      ]
+    },
+    {
+      "documentId": "doc.bd.db-design",
+      "template": "db-design-template.md",
+      "output": "docs/basic-design/db-design.md",
+      "sections": [
+        {
+          "id": "sec.bd.db-design.l2.1.1-overview",
+          "heading": "1. Overview",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.bd.db-design.l2.2.2-entity-relationship-diagram",
+          "heading": "2. Entity-Relationship Diagram",
+          "level": 2,
+          "order": 2
+        },
+        {
+          "id": "sec.bd.db-design.l2.3.3-table-list-and-roles",
+          "heading": "3. Table List and Roles",
+          "level": 2,
+          "order": 3
+        },
+        {
+          "id": "sec.bd.db-design.l2.4.4-detailed-table-descriptions",
+          "heading": "4. Detailed Table Descriptions",
+          "level": 2,
+          "order": 4
+        },
+        {
+          "id": "sec.bd.db-design.l3.5.41-tablename",
+          "heading": "4.1 <table_name>",
+          "level": 3,
+          "order": 5
+        },
+        {
+          "id": "sec.bd.db-design.l3.6.42-tablename",
+          "heading": "4.2 <table_name>",
+          "level": 3,
+          "order": 6
+        },
+        {
+          "id": "sec.bd.db-design.l2.7.5-relationships-summary",
+          "heading": "5. Relationships Summary",
+          "level": 2,
+          "order": 7
+        },
+        {
+          "id": "sec.bd.db-design.l2.8.6-data-integrity-rules",
+          "heading": "6. Data Integrity Rules",
+          "level": 2,
+          "order": 8
+        },
+        {
+          "id": "sec.bd.db-design.l2.9.7-performance-considerations",
+          "heading": "7. Performance Considerations",
+          "level": 2,
+          "order": 9
+        },
+        {
+          "id": "sec.bd.db-design.l2.10.8-security-considerations",
+          "heading": "8. Security Considerations",
+          "level": 2,
+          "order": 10
+        },
+        {
+          "id": "sec.bd.db-design.l2.11.9-future-extensions",
+          "heading": "9. Future Extensions",
+          "level": 2,
+          "order": 11
+        },
+        {
+          "id": "sec.bd.db-design.l2.12.10-notes",
+          "heading": "10. Notes",
+          "level": 2,
+          "order": 12
+        }
+      ]
+    },
+    {
+      "documentId": "doc.bd.list-api",
+      "template": "list-api-template.md",
+      "output": "docs/basic-design/api-list.md",
+      "sections": [
+        {
+          "id": "sec.bd.list-api.l2.1.1-api-overview",
+          "heading": "1. API Overview",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.bd.list-api.l2.2.2-authentication",
+          "heading": "2. Authentication",
+          "level": 2,
+          "order": 2
+        },
+        {
+          "id": "sec.bd.list-api.l2.3.3-endpoint-summary",
+          "heading": "3. Endpoint Summary",
+          "level": 2,
+          "order": 3
+        },
+        {
+          "id": "sec.bd.list-api.l2.4.4-pagination",
+          "heading": "4. Pagination",
+          "level": 2,
+          "order": 4
+        },
+        {
+          "id": "sec.bd.list-api.l2.5.5-filtering-and-sorting",
+          "heading": "5. Filtering and Sorting",
+          "level": 2,
+          "order": 5
+        },
+        {
+          "id": "sec.bd.list-api.l2.6.6-openapi-specification-reference",
+          "heading": "6. OpenAPI / Specification Reference",
+          "level": 2,
+          "order": 6
+        },
+        {
+          "id": "sec.bd.list-api.l2.7.7-notes",
+          "heading": "7. Notes",
+          "level": 2,
+          "order": 7
+        }
+      ]
+    },
+    {
+      "documentId": "doc.bd.list-screen",
+      "template": "list-screen-template.md",
+      "output": "docs/basic-design/list-screens.md",
+      "sections": [
+        {
+          "id": "sec.bd.list-screen.l2.1.1-design-system-overview",
+          "heading": "1. Design System Overview",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.bd.list-screen.l2.2.2-screen-map-navigation-flow",
+          "heading": "2. Screen Map (Navigation Flow)",
+          "level": 2,
+          "order": 2
+        },
+        {
+          "id": "sec.bd.list-screen.l2.3.3-quick-reference-common-ui-elements",
+          "heading": "3. Quick Reference: Common UI Elements",
+          "level": 2,
+          "order": 3
+        },
+        {
+          "id": "sec.bd.list-screen.l2.4.4-screen-index",
+          "heading": "4. Screen Index",
+          "level": 2,
+          "order": 4
+        },
+        {
+          "id": "sec.bd.list-screen.l2.5.5-responsive-design-considerations",
+          "heading": "5. Responsive Design Considerations",
+          "level": 2,
+          "order": 5
+        },
+        {
+          "id": "sec.bd.list-screen.l2.6.6-common-ui-patterns",
+          "heading": "6. Common UI Patterns",
+          "level": 2,
+          "order": 6
+        },
+        {
+          "id": "sec.bd.list-screen.l2.7.7-accessibility-considerations",
+          "heading": "7. Accessibility Considerations",
+          "level": 2,
+          "order": 7
+        },
+        {
+          "id": "sec.bd.list-screen.l2.8.8-visual-resources",
+          "heading": "8. Visual Resources",
+          "level": 2,
+          "order": 8
+        },
+        {
+          "id": "sec.bd.list-screen.l2.9.9-notes",
+          "heading": "9. Notes",
+          "level": 2,
+          "order": 9
+        }
+      ]
+    },
+    {
+      "documentId": "doc.dd.architecture-overview",
+      "template": "common/architecture-overview-template.md",
+      "output": "docs/detail-design/common/architecture-overview.md",
+      "sections": [
+        {
+          "id": "sec.dd.architecture-overview.l2.1.1-overview",
+          "heading": "1. Overview",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.2.2-system-context-c4-level-1",
+          "heading": "2. System Context (C4 Level 1)",
+          "level": 2,
+          "order": 2
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.3.3-container-architecture-c4-level-2",
+          "heading": "3. Container Architecture (C4 Level 2)",
+          "level": 2,
+          "order": 3
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.4.4-component-architecture-c4-level-3",
+          "heading": "4. Component Architecture (C4 Level 3)",
+          "level": 2,
+          "order": 4
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.5.5-technology-stack",
+          "heading": "5. Technology Stack",
+          "level": 2,
+          "order": 5
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.6.6-architectural-patterns",
+          "heading": "6. Architectural Patterns",
+          "level": 2,
+          "order": 6
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.7.7-design-principles",
+          "heading": "7. Design Principles",
+          "level": 2,
+          "order": 7
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.8.8-system-boundaries",
+          "heading": "8. System Boundaries",
+          "level": 2,
+          "order": 8
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.9.9-data-flow",
+          "heading": "9. Data Flow",
+          "level": 2,
+          "order": 9
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.10.10-non-functional-requirements",
+          "heading": "10. Non-Functional Requirements",
+          "level": 2,
+          "order": 10
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.11.11-deployment-architecture",
+          "heading": "11. Deployment Architecture",
+          "level": 2,
+          "order": 11
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.12.12-references",
+          "heading": "12. References",
+          "level": 2,
+          "order": 12
+        },
+        {
+          "id": "sec.dd.architecture-overview.l2.13.13-notes",
+          "heading": "13. Notes",
+          "level": 2,
+          "order": 13
+        }
+      ]
+    },
+    {
+      "documentId": "doc.dd.security-patterns",
+      "template": "common/security-patterns-template.md",
+      "output": "docs/detail-design/common/security-patterns.md",
+      "sections": [
+        {
+          "id": "sec.dd.security-patterns.l2.1.1-overview",
+          "heading": "1. Overview",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.2.2-authentication",
+          "heading": "2. Authentication",
+          "level": 2,
+          "order": 2
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.3.21-jwt-authentication-example",
+          "heading": "2.1 JWT Authentication (Example)",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.4.22-oauth2-authentication-alternative",
+          "heading": "2.2 OAuth2 Authentication (Alternative)",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.5.23-session-based-authentication-alternative",
+          "heading": "2.3 Session-Based Authentication (Alternative)",
+          "level": 3,
+          "order": 5
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.6.3-authorization",
+          "heading": "3. Authorization",
+          "level": 2,
+          "order": 6
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.7.31-role-based-access-control-rbac",
+          "heading": "3.1 Role-Based Access Control (RBAC)",
+          "level": 3,
+          "order": 7
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.8.32-attribute-based-access-control-abac",
+          "heading": "3.2 Attribute-Based Access Control (ABAC)",
+          "level": 3,
+          "order": 8
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.9.33-authorization-implementation",
+          "heading": "3.3 Authorization Implementation",
+          "level": 3,
+          "order": 9
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.10.4-data-protection",
+          "heading": "4. Data Protection",
+          "level": 2,
+          "order": 10
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.11.41-encryption",
+          "heading": "4.1 Encryption",
+          "level": 3,
+          "order": 11
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.12.42-data-masking",
+          "heading": "4.2 Data Masking",
+          "level": 3,
+          "order": 12
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.13.43-password-security",
+          "heading": "4.3 Password Security",
+          "level": 3,
+          "order": 13
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.14.5-input-validation",
+          "heading": "5. Input Validation",
+          "level": 2,
+          "order": 14
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.15.51-validation-rules",
+          "heading": "5.1 Validation Rules",
+          "level": 3,
+          "order": 15
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.16.52-sql-injection-prevention",
+          "heading": "5.2 SQL Injection Prevention",
+          "level": 3,
+          "order": 16
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.17.53-xss-prevention",
+          "heading": "5.3 XSS Prevention",
+          "level": 3,
+          "order": 17
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.18.54-csrf-prevention",
+          "heading": "5.4 CSRF Prevention",
+          "level": 3,
+          "order": 18
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.19.6-security-headers",
+          "heading": "6. Security Headers",
+          "level": 2,
+          "order": 19
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.20.7-security-logging-and-monitoring",
+          "heading": "7. Security Logging and Monitoring",
+          "level": 2,
+          "order": 20
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.21.71-security-events-to-log",
+          "heading": "7.1 Security Events to Log",
+          "level": 3,
+          "order": 21
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.22.72-log-format",
+          "heading": "7.2 Log Format",
+          "level": 3,
+          "order": 22
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.23.73-monitoring-and-alerting",
+          "heading": "7.3 Monitoring and Alerting",
+          "level": 3,
+          "order": 23
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.24.8-api-security",
+          "heading": "8. API Security",
+          "level": 2,
+          "order": 24
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.25.81-api-authentication",
+          "heading": "8.1 API Authentication",
+          "level": 3,
+          "order": 25
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.26.82-rate-limiting",
+          "heading": "8.2 Rate Limiting",
+          "level": 3,
+          "order": 26
+        },
+        {
+          "id": "sec.dd.security-patterns.l3.27.83-api-versioning",
+          "heading": "8.3 API Versioning",
+          "level": 3,
+          "order": 27
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.28.9-secure-development-practices",
+          "heading": "9. Secure Development Practices",
+          "level": 2,
+          "order": 28
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.29.10-compliance-and-standards",
+          "heading": "10. Compliance and Standards",
+          "level": 2,
+          "order": 29
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.30.11-references",
+          "heading": "11. References",
+          "level": 2,
+          "order": 30
+        },
+        {
+          "id": "sec.dd.security-patterns.l2.31.12-notes",
+          "heading": "12. Notes",
+          "level": 2,
+          "order": 31
+        }
+      ]
+    },
+    {
+      "documentId": "doc.dd.error-handling",
+      "template": "common/error-handling-patterns-template.md",
+      "output": "docs/detail-design/common/error-handling-patterns.md",
+      "sections": [
+        {
+          "id": "sec.dd.error-handling.l2.1.1-overview",
+          "heading": "1. Overview",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.dd.error-handling.l2.2.2-standard-error-response-format",
+          "heading": "2. Standard Error Response Format",
+          "level": 2,
+          "order": 2
+        },
+        {
+          "id": "sec.dd.error-handling.l3.3.21-api-error-response",
+          "heading": "2.1 API Error Response",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.dd.error-handling.l3.4.22-error-response-fields",
+          "heading": "2.2 Error Response Fields",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.dd.error-handling.l2.5.3-error-code-taxonomy",
+          "heading": "3. Error Code Taxonomy",
+          "level": 2,
+          "order": 5
+        },
+        {
+          "id": "sec.dd.error-handling.l3.6.31-error-code-format",
+          "heading": "3.1 Error Code Format",
+          "level": 3,
+          "order": 6
+        },
+        {
+          "id": "sec.dd.error-handling.l3.7.32-common-error-codes",
+          "heading": "3.2 Common Error Codes",
+          "level": 3,
+          "order": 7
+        },
+        {
+          "id": "sec.dd.error-handling.l2.8.4-exception-handling-strategy",
+          "heading": "4. Exception Handling Strategy",
+          "level": 2,
+          "order": 8
+        },
+        {
+          "id": "sec.dd.error-handling.l3.9.41-exception-hierarchy",
+          "heading": "4.1 Exception Hierarchy",
+          "level": 3,
+          "order": 9
+        },
+        {
+          "id": "sec.dd.error-handling.l3.10.42-exception-handling-flow",
+          "heading": "4.2 Exception Handling Flow",
+          "level": 3,
+          "order": 10
+        },
+        {
+          "id": "sec.dd.error-handling.l3.11.43-exception-handling-best-practices",
+          "heading": "4.3 Exception Handling Best Practices",
+          "level": 3,
+          "order": 11
+        },
+        {
+          "id": "sec.dd.error-handling.l2.12.5-user-facing-error-messages",
+          "heading": "5. User-Facing Error Messages",
+          "level": 2,
+          "order": 12
+        },
+        {
+          "id": "sec.dd.error-handling.l3.13.51-message-guidelines",
+          "heading": "5.1 Message Guidelines",
+          "level": 3,
+          "order": 13
+        },
+        {
+          "id": "sec.dd.error-handling.l3.14.52-message-examples",
+          "heading": "5.2 Message Examples",
+          "level": 3,
+          "order": 14
+        },
+        {
+          "id": "sec.dd.error-handling.l3.15.53-localization",
+          "heading": "5.3 Localization",
+          "level": 3,
+          "order": 15
+        },
+        {
+          "id": "sec.dd.error-handling.l2.16.6-logging-and-monitoring",
+          "heading": "6. Logging and Monitoring",
+          "level": 2,
+          "order": 16
+        },
+        {
+          "id": "sec.dd.error-handling.l3.17.61-error-logging",
+          "heading": "6.1 Error Logging",
+          "level": 3,
+          "order": 17
+        },
+        {
+          "id": "sec.dd.error-handling.l3.18.62-error-monitoring",
+          "heading": "6.2 Error Monitoring",
+          "level": 3,
+          "order": 18
+        },
+        {
+          "id": "sec.dd.error-handling.l2.19.7-retry-and-recovery-patterns",
+          "heading": "7. Retry and Recovery Patterns",
+          "level": 2,
+          "order": 19
+        },
+        {
+          "id": "sec.dd.error-handling.l3.20.71-retry-strategy",
+          "heading": "7.1 Retry Strategy",
+          "level": 3,
+          "order": 20
+        },
+        {
+          "id": "sec.dd.error-handling.l3.21.72-retry-configuration",
+          "heading": "7.2 Retry Configuration",
+          "level": 3,
+          "order": 21
+        },
+        {
+          "id": "sec.dd.error-handling.l3.22.73-circuit-breaker-pattern",
+          "heading": "7.3 Circuit Breaker Pattern",
+          "level": 3,
+          "order": 22
+        },
+        {
+          "id": "sec.dd.error-handling.l2.23.8-error-handling-by-layer",
+          "heading": "8. Error Handling by Layer",
+          "level": 2,
+          "order": 23
+        },
+        {
+          "id": "sec.dd.error-handling.l3.24.81-client-side-error-handling",
+          "heading": "8.1 Client-Side Error Handling",
+          "level": 3,
+          "order": 24
+        },
+        {
+          "id": "sec.dd.error-handling.l3.25.82-api-gateway-error-handling",
+          "heading": "8.2 API Gateway Error Handling",
+          "level": 3,
+          "order": 25
+        },
+        {
+          "id": "sec.dd.error-handling.l3.26.83-application-layer-error-handling",
+          "heading": "8.3 Application Layer Error Handling",
+          "level": 3,
+          "order": 26
+        },
+        {
+          "id": "sec.dd.error-handling.l3.27.84-database-layer-error-handling",
+          "heading": "8.4 Database Layer Error Handling",
+          "level": 3,
+          "order": 27
+        },
+        {
+          "id": "sec.dd.error-handling.l2.28.9-error-handling-examples",
+          "heading": "9. Error Handling Examples",
+          "level": 2,
+          "order": 28
+        },
+        {
+          "id": "sec.dd.error-handling.l3.29.91-validation-error-example",
+          "heading": "9.1 Validation Error Example",
+          "level": 3,
+          "order": 29
+        },
+        {
+          "id": "sec.dd.error-handling.l3.30.92-authentication-error-example",
+          "heading": "9.2 Authentication Error Example",
+          "level": 3,
+          "order": 30
+        },
+        {
+          "id": "sec.dd.error-handling.l3.31.93-not-found-error-example",
+          "heading": "9.3 Not Found Error Example",
+          "level": 3,
+          "order": 31
+        },
+        {
+          "id": "sec.dd.error-handling.l2.32.10-references",
+          "heading": "10. References",
+          "level": 2,
+          "order": 32
+        },
+        {
+          "id": "sec.dd.error-handling.l2.33.11-notes",
+          "heading": "11. Notes",
+          "level": 2,
+          "order": 33
+        }
+      ]
+    },
+    {
+      "documentId": "doc.dd.performance-standards",
+      "template": "common/performance-standards-template.md",
+      "output": "docs/detail-design/common/performance-standards.md",
+      "sections": [
+        {
+          "id": "sec.dd.performance-standards.l2.1.1-overview",
+          "heading": "1. Overview",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.2.2-performance-requirements",
+          "heading": "2. Performance Requirements",
+          "level": 2,
+          "order": 2
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.3.21-response-time-targets",
+          "heading": "2.1 Response Time Targets",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.4.22-throughput-targets",
+          "heading": "2.2 Throughput Targets",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.5.23-resource-utilization",
+          "heading": "2.3 Resource Utilization",
+          "level": 3,
+          "order": 5
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.6.3-caching-strategies",
+          "heading": "3. Caching Strategies",
+          "level": 2,
+          "order": 6
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.7.31-caching-layers",
+          "heading": "3.1 Caching Layers",
+          "level": 3,
+          "order": 7
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.8.32-cache-types",
+          "heading": "3.2 Cache Types",
+          "level": 3,
+          "order": 8
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.9.33-cache-invalidation",
+          "heading": "3.3 Cache Invalidation",
+          "level": 3,
+          "order": 9
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.10.34-what-to-cache",
+          "heading": "3.4 What to Cache",
+          "level": 3,
+          "order": 10
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.11.4-database-optimization",
+          "heading": "4. Database Optimization",
+          "level": 2,
+          "order": 11
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.12.41-query-optimization",
+          "heading": "4.1 Query Optimization",
+          "level": 3,
+          "order": 12
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.13.42-connection-pooling",
+          "heading": "4.2 Connection Pooling",
+          "level": 3,
+          "order": 13
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.14.43-database-scaling",
+          "heading": "4.3 Database Scaling",
+          "level": 3,
+          "order": 14
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.15.5-api-optimization",
+          "heading": "5. API Optimization",
+          "level": 2,
+          "order": 15
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.16.51-response-optimization",
+          "heading": "5.1 Response Optimization",
+          "level": 3,
+          "order": 16
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.17.52-request-optimization",
+          "heading": "5.2 Request Optimization",
+          "level": 3,
+          "order": 17
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.18.53-api-design-for-performance",
+          "heading": "5.3 API Design for Performance",
+          "level": 3,
+          "order": 18
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.19.6-scalability-patterns",
+          "heading": "6. Scalability Patterns",
+          "level": 2,
+          "order": 19
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.20.61-horizontal-scaling",
+          "heading": "6.1 Horizontal Scaling",
+          "level": 3,
+          "order": 20
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.21.62-vertical-scaling",
+          "heading": "6.2 Vertical Scaling",
+          "level": 3,
+          "order": 21
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.22.63-auto-scaling-configuration",
+          "heading": "6.3 Auto-Scaling Configuration",
+          "level": 3,
+          "order": 22
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.23.7-performance-monitoring",
+          "heading": "7. Performance Monitoring",
+          "level": 2,
+          "order": 23
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.24.71-key-metrics",
+          "heading": "7.1 Key Metrics",
+          "level": 3,
+          "order": 24
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.25.72-monitoring-tools",
+          "heading": "7.2 Monitoring Tools",
+          "level": 3,
+          "order": 25
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.26.73-alerting",
+          "heading": "7.3 Alerting",
+          "level": 3,
+          "order": 26
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.27.8-performance-testing",
+          "heading": "8. Performance Testing",
+          "level": 2,
+          "order": 27
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.28.81-testing-types",
+          "heading": "8.1 Testing Types",
+          "level": 3,
+          "order": 28
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.29.82-performance-test-scenarios",
+          "heading": "8.2 Performance Test Scenarios",
+          "level": 3,
+          "order": 29
+        },
+        {
+          "id": "sec.dd.performance-standards.l3.30.83-performance-benchmarks",
+          "heading": "8.3 Performance Benchmarks",
+          "level": 3,
+          "order": 30
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.31.9-optimization-checklist",
+          "heading": "9. Optimization Checklist",
+          "level": 2,
+          "order": 31
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.32.10-references",
+          "heading": "10. References",
+          "level": 2,
+          "order": 32
+        },
+        {
+          "id": "sec.dd.performance-standards.l2.33.11-notes",
+          "heading": "11. Notes",
+          "level": 2,
+          "order": 33
+        }
+      ]
+    },
+    {
+      "documentId": "doc.dd.integration-patterns",
+      "template": "common/integration-patterns-template.md",
+      "output": "docs/detail-design/common/integration-patterns.md",
+      "sections": [
+        {
+          "id": "sec.dd.integration-patterns.l2.1.1-overview",
+          "heading": "1. Overview",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.2.2-api-integration-patterns",
+          "heading": "2. API Integration Patterns",
+          "level": 2,
+          "order": 2
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.3.21-rest-api-integration",
+          "heading": "2.1 REST API Integration",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.4.22-graphql-integration",
+          "heading": "2.2 GraphQL Integration",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.5.23-grpc-integration",
+          "heading": "2.3 gRPC Integration",
+          "level": 3,
+          "order": 5
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.6.3-event-driven-architecture",
+          "heading": "3. Event-Driven Architecture",
+          "level": 2,
+          "order": 6
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.7.31-event-patterns",
+          "heading": "3.1 Event Patterns",
+          "level": 3,
+          "order": 7
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.8.32-message-queue-patterns",
+          "heading": "3.2 Message Queue Patterns",
+          "level": 3,
+          "order": 8
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.9.33-event-types",
+          "heading": "3.3 Event Types",
+          "level": 3,
+          "order": 9
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.10.4-third-party-service-integration",
+          "heading": "4. Third-Party Service Integration",
+          "level": 2,
+          "order": 10
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.11.41-integration-patterns",
+          "heading": "4.1 Integration Patterns",
+          "level": 3,
+          "order": 11
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.12.42-webhook-integration",
+          "heading": "4.2 Webhook Integration",
+          "level": 3,
+          "order": 12
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.13.43-oauth2-integration",
+          "heading": "4.3 OAuth2 Integration",
+          "level": 3,
+          "order": 13
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.14.5-data-synchronization",
+          "heading": "5. Data Synchronization",
+          "level": 2,
+          "order": 14
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.15.51-synchronization-patterns",
+          "heading": "5.1 Synchronization Patterns",
+          "level": 3,
+          "order": 15
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.16.52-conflict-resolution",
+          "heading": "5.2 Conflict Resolution",
+          "level": 3,
+          "order": 16
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.17.6-error-handling-in-integrations",
+          "heading": "6. Error Handling in Integrations",
+          "level": 2,
+          "order": 17
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.18.61-retry-strategy",
+          "heading": "6.1 Retry Strategy",
+          "level": 3,
+          "order": 18
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.19.62-circuit-breaker",
+          "heading": "6.2 Circuit Breaker",
+          "level": 3,
+          "order": 19
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.20.63-fallback-mechanisms",
+          "heading": "6.3 Fallback Mechanisms",
+          "level": 3,
+          "order": 20
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.21.7-integration-monitoring",
+          "heading": "7. Integration Monitoring",
+          "level": 2,
+          "order": 21
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.22.71-metrics-to-monitor",
+          "heading": "7.1 Metrics to Monitor",
+          "level": 3,
+          "order": 22
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.23.72-logging",
+          "heading": "7.2 Logging",
+          "level": 3,
+          "order": 23
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.24.73-alerting",
+          "heading": "7.3 Alerting",
+          "level": 3,
+          "order": 24
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.25.8-integration-testing",
+          "heading": "8. Integration Testing",
+          "level": 2,
+          "order": 25
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.26.81-testing-strategies",
+          "heading": "8.1 Testing Strategies",
+          "level": 3,
+          "order": 26
+        },
+        {
+          "id": "sec.dd.integration-patterns.l3.27.82-test-scenarios",
+          "heading": "8.2 Test Scenarios",
+          "level": 3,
+          "order": 27
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.28.9-integration-checklist",
+          "heading": "9. Integration Checklist",
+          "level": 2,
+          "order": 28
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.29.10-references",
+          "heading": "10. References",
+          "level": 2,
+          "order": 29
+        },
+        {
+          "id": "sec.dd.integration-patterns.l2.30.11-notes",
+          "heading": "11. Notes",
+          "level": 2,
+          "order": 30
+        }
+      ]
+    },
+    {
+      "documentId": "doc.dd.deployment",
+      "template": "common/deployment-infrastructure-template.md",
+      "output": "docs/detail-design/common/deployment-infrastructure.md",
+      "sections": [
+        {
+          "id": "sec.dd.deployment.l2.1.1-overview",
+          "heading": "1. Overview",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.dd.deployment.l2.2.2-infrastructure-architecture",
+          "heading": "2. Infrastructure Architecture",
+          "level": 2,
+          "order": 2
+        },
+        {
+          "id": "sec.dd.deployment.l3.3.21-high-level-architecture",
+          "heading": "2.1 High-Level Architecture",
+          "level": 3,
+          "order": 3
+        },
+        {
+          "id": "sec.dd.deployment.l3.4.22-infrastructure-components",
+          "heading": "2.2 Infrastructure Components",
+          "level": 3,
+          "order": 4
+        },
+        {
+          "id": "sec.dd.deployment.l2.5.3-containerization",
+          "heading": "3. Containerization",
+          "level": 2,
+          "order": 5
+        },
+        {
+          "id": "sec.dd.deployment.l3.6.31-docker-configuration",
+          "heading": "3.1 Docker Configuration",
+          "level": 3,
+          "order": 6
+        },
+        {
+          "id": "sec.dd.deployment.l3.7.32-container-orchestration",
+          "heading": "3.2 Container Orchestration",
+          "level": 3,
+          "order": 7
+        },
+        {
+          "id": "sec.dd.deployment.l2.8.4-cicd-pipeline",
+          "heading": "4. CI/CD Pipeline",
+          "level": 2,
+          "order": 8
+        },
+        {
+          "id": "sec.dd.deployment.l3.9.41-pipeline-stages",
+          "heading": "4.1 Pipeline Stages",
+          "level": 3,
+          "order": 9
+        },
+        {
+          "id": "sec.dd.deployment.l3.10.42-cicd-configuration",
+          "heading": "4.2 CI/CD Configuration",
+          "level": 3,
+          "order": 10
+        },
+        {
+          "id": "sec.dd.deployment.l3.11.43-branching-strategy",
+          "heading": "4.3 Branching Strategy",
+          "level": 3,
+          "order": 11
+        },
+        {
+          "id": "sec.dd.deployment.l2.12.5-environments",
+          "heading": "5. Environments",
+          "level": 2,
+          "order": 12
+        },
+        {
+          "id": "sec.dd.deployment.l3.13.51-environment-configuration",
+          "heading": "5.1 Environment Configuration",
+          "level": 3,
+          "order": 13
+        },
+        {
+          "id": "sec.dd.deployment.l3.14.52-environment-variables",
+          "heading": "5.2 Environment Variables",
+          "level": 3,
+          "order": 14
+        },
+        {
+          "id": "sec.dd.deployment.l2.15.6-deployment-strategies",
+          "heading": "6. Deployment Strategies",
+          "level": 2,
+          "order": 15
+        },
+        {
+          "id": "sec.dd.deployment.l3.16.61-blue-green-deployment",
+          "heading": "6.1 Blue-Green Deployment",
+          "level": 3,
+          "order": 16
+        },
+        {
+          "id": "sec.dd.deployment.l3.17.62-canary-deployment",
+          "heading": "6.2 Canary Deployment",
+          "level": 3,
+          "order": 17
+        },
+        {
+          "id": "sec.dd.deployment.l3.18.63-rolling-deployment",
+          "heading": "6.3 Rolling Deployment",
+          "level": 3,
+          "order": 18
+        },
+        {
+          "id": "sec.dd.deployment.l2.19.7-infrastructure-as-code",
+          "heading": "7. Infrastructure as Code",
+          "level": 2,
+          "order": 19
+        },
+        {
+          "id": "sec.dd.deployment.l3.20.71-iac-tools",
+          "heading": "7.1 IaC Tools",
+          "level": 3,
+          "order": 20
+        },
+        {
+          "id": "sec.dd.deployment.l3.21.72-infrastructure-versioning",
+          "heading": "7.2 Infrastructure Versioning",
+          "level": 3,
+          "order": 21
+        },
+        {
+          "id": "sec.dd.deployment.l2.22.8-monitoring-and-observability",
+          "heading": "8. Monitoring and Observability",
+          "level": 2,
+          "order": 22
+        },
+        {
+          "id": "sec.dd.deployment.l3.23.81-logging",
+          "heading": "8.1 Logging",
+          "level": 3,
+          "order": 23
+        },
+        {
+          "id": "sec.dd.deployment.l3.24.82-metrics",
+          "heading": "8.2 Metrics",
+          "level": 3,
+          "order": 24
+        },
+        {
+          "id": "sec.dd.deployment.l3.25.83-tracing",
+          "heading": "8.3 Tracing",
+          "level": 3,
+          "order": 25
+        },
+        {
+          "id": "sec.dd.deployment.l3.26.84-alerting",
+          "heading": "8.4 Alerting",
+          "level": 3,
+          "order": 26
+        },
+        {
+          "id": "sec.dd.deployment.l2.27.9-disaster-recovery",
+          "heading": "9. Disaster Recovery",
+          "level": 2,
+          "order": 27
+        },
+        {
+          "id": "sec.dd.deployment.l3.28.91-backup-strategy",
+          "heading": "9.1 Backup Strategy",
+          "level": 3,
+          "order": 28
+        },
+        {
+          "id": "sec.dd.deployment.l3.29.92-recovery-procedures",
+          "heading": "9.2 Recovery Procedures",
+          "level": 3,
+          "order": 29
+        },
+        {
+          "id": "sec.dd.deployment.l3.30.93-high-availability",
+          "heading": "9.3 High Availability",
+          "level": 3,
+          "order": 30
+        },
+        {
+          "id": "sec.dd.deployment.l2.31.10-security",
+          "heading": "10. Security",
+          "level": 2,
+          "order": 31
+        },
+        {
+          "id": "sec.dd.deployment.l3.32.101-infrastructure-security",
+          "heading": "10.1 Infrastructure Security",
+          "level": 3,
+          "order": 32
+        },
+        {
+          "id": "sec.dd.deployment.l3.33.102-data-security",
+          "heading": "10.2 Data Security",
+          "level": 3,
+          "order": 33
+        },
+        {
+          "id": "sec.dd.deployment.l2.34.11-cost-optimization",
+          "heading": "11. Cost Optimization",
+          "level": 2,
+          "order": 34
+        },
+        {
+          "id": "sec.dd.deployment.l3.35.111-cost-management",
+          "heading": "11.1 Cost Management",
+          "level": 3,
+          "order": 35
+        },
+        {
+          "id": "sec.dd.deployment.l2.36.12-references",
+          "heading": "12. References",
+          "level": 2,
+          "order": 36
+        },
+        {
+          "id": "sec.dd.deployment.l2.37.13-notes",
+          "heading": "13. Notes",
+          "level": 2,
+          "order": 37
+        }
+      ]
+    },
+    {
+      "documentId": "doc.dd.feature-list",
+      "template": "feature-list-template.md",
+      "output": "docs/detail-design/feature-list.md",
+      "sections": [
+        {
+          "id": "sec.dd.feature-list.l2.1.1-list-of-features",
+          "heading": "1. List of Features",
+          "level": 2,
+          "order": 1
+        },
+        {
+          "id": "sec.dd.feature-list.l2.2.2-feature-dependencies-optional",
+          "heading": "2. Feature Dependencies (Optional)",
+          "level": 2,
+          "order": 2
+        }
+      ]
+    }
+  ]
+}

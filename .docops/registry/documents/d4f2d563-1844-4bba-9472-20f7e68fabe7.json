@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "d4f2d563-1844-4bba-9472-20f7e68fabe7",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/7-quality-attributes.md",
+  "repoDocs": {
+    "en": "docs/srs/en/7-quality-attributes.md"
+  },
+  "displayName": "7-quality-attributes",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.352Z",
+  "updatedAt": "2026-09-14T12:28:19.352Z"
+}

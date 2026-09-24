@@ -1,0 +1,23 @@
+{
+  "inScope": [
+    "Request types: annual leave, unpaid leave, late arrival/early leave, overtime, business trip, remote work, missed attendance record",
+    "Multi-level approval workflow",
+    "Annual leave quota management",
+    "Notifications and reminders",
+    "Leave calendar and request lookup",
+    "Reporting and Excel export",
+    "User, department, role and system administration"
+  ],
+  "outOfScope": [
+    "Payroll calculation",
+    "Attendance capture via fingerprint or face-recognition devices (future integration must be anticipated)",
+    "KPI and performance evaluation management"
+  ],
+  "assumptions": [
+    "About 250 employees across 3 branches (Hanoi, Da Nang, Ho Chi Minh City)",
+    "Cloud deployment is preferred over on-premise",
+    "The company already operates a corporate email system usable for authentication",
+    "Leave policy changes over time and must be configuration-driven",
+    "Phase 1 focuses on annual leave, approval and basic reporting, targeting go-live in about 3 months"
+  ]
+}

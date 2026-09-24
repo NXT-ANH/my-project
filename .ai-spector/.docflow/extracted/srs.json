@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "docType": "srs",
+  "specs": [
+    {
+      "id": "SPEC-001",
+      "statement": "TBD-001 (owner: HR) — BLOCKING: Form field definitions are required for the six request types other than annual leave (unpaid leave, late arrival/early leave, overtime, business trip, remote work, missed attendance record). The RFP defines fields only for annual leave. Until supplied, F-08 cannot configure those types completely and UC-01 cannot render their forms.",
+      "extractedFrom": [
+        "docs/srs/en/04-system-features/f-01-request-submission-and-lifecycle-management.md",
+        "docs/srs/en/04-system-features/f-08-request-type-workflow-and-holiday-configuration.md",
+        "docs/srs/en/03-use-cases/uc-01-submit-a-request.md",
+        "docs/srs/en/03-use-cases/uc-13-configure-request-types-and-approval-workflows.md"
+      ],
+      "status": "pending",
+      "createdAt": "2026-09-14T12:34:05.050Z"
+    },
+    {
+      "id": "SPEC-002",
+      "statement": "TBD-002 (owner: HR) — BLOCKING: The seniority tiers or formula determining the annual leave quota are undefined. The RFP states the quota defaults to 12 days and 'varies by seniority' with no rule. Until supplied, FR-14 is only partially satisfiable: seniority entitlement must be applied by manual HR adjustment (FR-16) rather than computed by the system.",
+      "extractedFrom": [
+        "docs/srs/en/04-system-features/f-03-annual-leave-balance-management.md",
+        "docs/srs/en/03-use-cases/uc-06-view-leave-balance.md",
+        "docs/srs/en/03-use-cases/uc-07-adjust-leave-balance.md"
+      ],
+      "status": "pending",
+      "createdAt": "2026-09-14T12:34:05.050Z"
+    },
+    {
+      "id": "SPEC-003",
+      "statement": "TBD-003 (owner: IT) — BLOCKING: The corporate identity provider is unnamed and whether SSO is in phase-1 scope is undecided. The RFP asks to sign in with the company email account, reusing the existing corporate account 'if possible'. Until resolved, the authentication mechanism, session lifetime (TBD-034), failed-attempt lockout (TBD-035), account provisioning (TBD-036) and provider-outage fallback (TBD-037) cannot be specified. Provider availability also bounds the system availability commitment in NFR-06.",
+      "extractedFrom": [
+        "docs/srs/en/04-system-features/f-07-user-organization-and-access-management.md",
+        "docs/srs/en/03-use-cases/uc-15-sign-in-with-company-email-account.md",
+        "docs/srs/en/6-external-interfaces.md",
+        "docs/srs/en/7-quality-attributes.md"
+      ],
+      "status": "pending",
+      "createdAt": "2026-09-14T12:34:05.050Z"
+    }
+  ]
+}

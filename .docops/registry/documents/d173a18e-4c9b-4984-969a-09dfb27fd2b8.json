@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "d173a18e-4c9b-4984-969a-09dfb27fd2b8",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/04-system-features/f-02-multi-level-approval-workflow.md",
+  "repoDocs": {
+    "en": "docs/srs/en/04-system-features/f-02-multi-level-approval-workflow.md"
+  },
+  "displayName": "f-02-multi-level-approval-workflow",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.350Z",
+  "updatedAt": "2026-09-14T12:28:19.350Z"
+}

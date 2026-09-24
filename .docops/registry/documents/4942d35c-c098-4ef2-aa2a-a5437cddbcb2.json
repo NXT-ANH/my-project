@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "4942d35c-c098-4ef2-aa2a-a5437cddbcb2",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-01-submit-a-request.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-01-submit-a-request.md"
+  },
+  "displayName": "uc-01-submit-a-request",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.345Z",
+  "updatedAt": "2026-09-14T12:28:19.345Z"
+}

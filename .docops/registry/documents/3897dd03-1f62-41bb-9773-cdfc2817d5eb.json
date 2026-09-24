@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "3897dd03-1f62-41bb-9773-cdfc2817d5eb",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-15-sign-in-with-company-email-account.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-15-sign-in-with-company-email-account.md"
+  },
+  "displayName": "uc-15-sign-in-with-company-email-account",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.350Z",
+  "updatedAt": "2026-09-14T12:28:19.350Z"
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "ffc56a90-2767-40e5-9472-7eb7b3e458e5",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/6-external-interfaces.md",
+  "repoDocs": {
+    "en": "docs/srs/en/6-external-interfaces.md"
+  },
+  "displayName": "6-external-interfaces",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.352Z",
+  "updatedAt": "2026-09-14T12:28:19.352Z"
+}

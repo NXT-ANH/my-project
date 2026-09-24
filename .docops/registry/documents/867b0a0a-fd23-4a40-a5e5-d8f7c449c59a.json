@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "867b0a0a-fd23-4a40-a5e5-d8f7c449c59a",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-05-delegate-approval-authority.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-05-delegate-approval-authority.md"
+  },
+  "displayName": "uc-05-delegate-approval-authority",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.348Z",
+  "updatedAt": "2026-09-14T12:28:19.348Z"
+}

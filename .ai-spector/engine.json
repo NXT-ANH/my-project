@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "scaffoldVersion": "0.9.31",
+  "artifacts": {
+    "graph": ".ai-spector/graph/traceability.graph.json",
+    "registry": ".ai-spector/registry/section-registry.json",
+    "impactRules": ".ai-spector/rules/impact.json",
+    "tasks": ".ai-spector/.docflow/tasks",
+    "context": ".ai-spector/.docflow/context",
+    "knowledge": ".ai-spector/.docflow/knowledge",
+    "extracted": ".ai-spector/.docflow/extracted"
+  },
+  "cocoindex": {
+    "enabled": false
+  },
+  "readiness": {
+    "profile": "general",
+    "standards": [],
+    "docTypes": {},
+    "lastScan": null
+  }
+}

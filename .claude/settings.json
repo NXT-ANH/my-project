@@ -1,0 +1,75 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx tsx .claude/hooks/log-skill-read.ts"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx --no-install kaopiz-devkit remind"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx tsx .claude/hooks/log-skill-read.ts"
+          }
+        ]
+      },
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx tsx .claude/hooks/log-skill-read.ts"
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/block-env-edit.sh",
+            "timeout": 10,
+            "statusMessage": "Checking for protected files..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$CLAUDE_PROJECT_DIR/.claude/hooks/format-ts.sh",
+            "timeout": 60,
+            "statusMessage": "Formatting and linting..."
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(npx tsx .claude/hooks/*)",
+      "Bash(npx kaopiz-devkit status*)",
+      "Bash(npx kaopiz-devkit remind*)",
+      "Bash(git config *)",
+      "Bash($CLAUDE_PROJECT_DIR/.claude/hooks/*)"
+    ]
+  }
+}

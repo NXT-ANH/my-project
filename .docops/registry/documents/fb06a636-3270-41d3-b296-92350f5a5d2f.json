@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "fb06a636-3270-41d3-b296-92350f5a5d2f",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-14-configure-public-holidays.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-14-configure-public-holidays.md"
+  },
+  "displayName": "uc-14-configure-public-holidays",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.349Z",
+  "updatedAt": "2026-09-14T12:28:19.349Z"
+}

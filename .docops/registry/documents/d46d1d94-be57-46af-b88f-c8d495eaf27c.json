@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "d46d1d94-be57-46af-b88f-c8d495eaf27c",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-13-configure-request-types-and-approval-workflows.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-13-configure-request-types-and-approval-workflows.md"
+  },
+  "displayName": "uc-13-configure-request-types-and-approval-workflows",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.349Z",
+  "updatedAt": "2026-09-14T12:28:19.349Z"
+}

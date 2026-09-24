@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "outputs": {
+    "srs": ".ai-spector/index/srs.md",
+    "basicDesign": ".ai-spector/index/basic-design.md",
+    "detailDesign": ".ai-spector/index/detail-design.md",
+    "dataSource": ".ai-spector/index/data-source.md"
+  },
+  "sources": {
+    "srs": {
+      "root": "docs/srs",
+      "dag": ".ai-spector/.docflow/config/doc-types/srs/dag.json",
+      "glob": "**/*.md"
+    },
+    "basicDesign": {
+      "root": "docs/basic-design",
+      "glob": "**/*.md"
+    },
+    "detailDesign": {
+      "root": "docs/detail-design",
+      "glob": "**/*.md",
+      "dag": ".ai-spector/.docflow/config/doc-types/detail-design/dag.json"
+    },
+    "dataSource": {
+      "root": "docs/data-source",
+      "glob": "**/*.md"
+    }
+  },
+  "entryFormat": {
+    "heading": "## File: {basename}",
+    "fields": ["location", "metadata", "summary"]
+  }
+}

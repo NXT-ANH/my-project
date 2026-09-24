@@ -1,0 +1,293 @@
+{
+  "version": 2,
+  "jobs": [
+    {
+      "id": "srs/03-use-cases/uc-01-submit-a-request:internal",
+      "logicalPath": "srs/03-use-cases/uc-01-submit-a-request",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.842Z",
+      "baselineHash": null,
+      "currentHash": "e3afd6c633cbc6ed"
+    },
+    {
+      "id": "srs/03-use-cases/uc-02-track-and-cancel-own-requests:internal",
+      "logicalPath": "srs/03-use-cases/uc-02-track-and-cancel-own-requests",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.847Z",
+      "baselineHash": null,
+      "currentHash": "01694289c7201cdf"
+    },
+    {
+      "id": "srs/03-use-cases/uc-03-approve-or-reject-a-request:internal",
+      "logicalPath": "srs/03-use-cases/uc-03-approve-or-reject-a-request",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.850Z",
+      "baselineHash": null,
+      "currentHash": "14df99775c09528b"
+    },
+    {
+      "id": "srs/03-use-cases/uc-04-amend-and-resubmit-a-rejected-request:internal",
+      "logicalPath": "srs/03-use-cases/uc-04-amend-and-resubmit-a-rejected-request",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.853Z",
+      "baselineHash": null,
+      "currentHash": "dcab64b2c4033d33"
+    },
+    {
+      "id": "srs/03-use-cases/uc-05-delegate-approval-authority:internal",
+      "logicalPath": "srs/03-use-cases/uc-05-delegate-approval-authority",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.858Z",
+      "baselineHash": null,
+      "currentHash": "a4d47972649c0718"
+    },
+    {
+      "id": "srs/03-use-cases/uc-06-view-leave-balance:internal",
+      "logicalPath": "srs/03-use-cases/uc-06-view-leave-balance",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.861Z",
+      "baselineHash": null,
+      "currentHash": "fa07d1b9cb2a22a7"
+    },
+    {
+      "id": "srs/03-use-cases/uc-07-adjust-leave-balance:internal",
+      "logicalPath": "srs/03-use-cases/uc-07-adjust-leave-balance",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.865Z",
+      "baselineHash": null,
+      "currentHash": "c6ebcb889d32b005"
+    },
+    {
+      "id": "srs/03-use-cases/uc-08-receive-notifications-and-reminders:internal",
+      "logicalPath": "srs/03-use-cases/uc-08-receive-notifications-and-reminders",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.868Z",
+      "baselineHash": null,
+      "currentHash": "edc901b96eecb828"
+    },
+    {
+      "id": "srs/03-use-cases/uc-09-view-team-leave-calendar:internal",
+      "logicalPath": "srs/03-use-cases/uc-09-view-team-leave-calendar",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.871Z",
+      "baselineHash": null,
+      "currentHash": "d5f9752274ddd928"
+    },
+    {
+      "id": "srs/03-use-cases/uc-10-search-and-filter-requests:internal",
+      "logicalPath": "srs/03-use-cases/uc-10-search-and-filter-requests",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.874Z",
+      "baselineHash": null,
+      "currentHash": "9f32d48f6150741a"
+    },
+    {
+      "id": "srs/03-use-cases/uc-11-view-and-export-reports:internal",
+      "logicalPath": "srs/03-use-cases/uc-11-view-and-export-reports",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.878Z",
+      "baselineHash": null,
+      "currentHash": "d66bc2ec9d373d27"
+    },
+    {
+      "id": "srs/03-use-cases/uc-12-manage-users-departments-and-permissions:internal",
+      "logicalPath": "srs/03-use-cases/uc-12-manage-users-departments-and-permissions",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.881Z",
+      "baselineHash": null,
+      "currentHash": "d6cccdc71c33e397"
+    },
+    {
+      "id": "srs/03-use-cases/uc-13-configure-request-types-and-approval-workflows:internal",
+      "logicalPath": "srs/03-use-cases/uc-13-configure-request-types-and-approval-workflows",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.885Z",
+      "baselineHash": null,
+      "currentHash": "db08ed3b64ef5c3d"
+    },
+    {
+      "id": "srs/03-use-cases/uc-14-configure-public-holidays:internal",
+      "logicalPath": "srs/03-use-cases/uc-14-configure-public-holidays",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.888Z",
+      "baselineHash": null,
+      "currentHash": "14f0d1410fb31d78"
+    },
+    {
+      "id": "srs/03-use-cases/uc-15-sign-in-with-company-email-account:internal",
+      "logicalPath": "srs/03-use-cases/uc-15-sign-in-with-company-email-account",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.892Z",
+      "baselineHash": null,
+      "currentHash": "bf13ab05a3ab55ed"
+    },
+    {
+      "id": "srs/04-system-features/f-01-request-submission-and-lifecycle-management:internal",
+      "logicalPath": "srs/04-system-features/f-01-request-submission-and-lifecycle-management",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.895Z",
+      "baselineHash": null,
+      "currentHash": "5bf6a29a11b7a7ea"
+    },
+    {
+      "id": "srs/04-system-features/f-02-multi-level-approval-workflow:internal",
+      "logicalPath": "srs/04-system-features/f-02-multi-level-approval-workflow",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.899Z",
+      "baselineHash": null,
+      "currentHash": "0662db6a8f2a1092"
+    },
+    {
+      "id": "srs/04-system-features/f-03-annual-leave-balance-management:internal",
+      "logicalPath": "srs/04-system-features/f-03-annual-leave-balance-management",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.902Z",
+      "baselineHash": null,
+      "currentHash": "fe5c23427f3f3f11"
+    },
+    {
+      "id": "srs/04-system-features/f-04-notification-and-reminder-service:internal",
+      "logicalPath": "srs/04-system-features/f-04-notification-and-reminder-service",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.905Z",
+      "baselineHash": null,
+      "currentHash": "f5cba9783c71ff48"
+    },
+    {
+      "id": "srs/04-system-features/f-05-leave-calendar-and-request-lookup:internal",
+      "logicalPath": "srs/04-system-features/f-05-leave-calendar-and-request-lookup",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.908Z",
+      "baselineHash": null,
+      "currentHash": "404eee2c4ccaff32"
+    },
+    {
+      "id": "srs/04-system-features/f-06-reporting-and-excel-export:internal",
+      "logicalPath": "srs/04-system-features/f-06-reporting-and-excel-export",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.911Z",
+      "baselineHash": null,
+      "currentHash": "fea18d94ad6cb36c"
+    },
+    {
+      "id": "srs/04-system-features/f-07-user-organization-and-access-management:internal",
+      "logicalPath": "srs/04-system-features/f-07-user-organization-and-access-management",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.914Z",
+      "baselineHash": null,
+      "currentHash": "659f0ca721a5e9d1"
+    },
+    {
+      "id": "srs/04-system-features/f-08-request-type-workflow-and-holiday-configuration:internal",
+      "logicalPath": "srs/04-system-features/f-08-request-type-workflow-and-holiday-configuration",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.918Z",
+      "baselineHash": null,
+      "currentHash": "ba402214b0892e14"
+    },
+    {
+      "id": "srs/1-introduction:internal",
+      "logicalPath": "srs/1-introduction",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.921Z",
+      "baselineHash": null,
+      "currentHash": "f095bb8173613d69"
+    },
+    {
+      "id": "srs/2-overall-description:internal",
+      "logicalPath": "srs/2-overall-description",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.924Z",
+      "baselineHash": null,
+      "currentHash": "7ab5461874d59982"
+    },
+    {
+      "id": "srs/3-use-cases:internal",
+      "logicalPath": "srs/3-use-cases",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.931Z",
+      "baselineHash": null,
+      "currentHash": "ef245d3797ae953b"
+    },
+    {
+      "id": "srs/4-system-features:internal",
+      "logicalPath": "srs/4-system-features",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.934Z",
+      "baselineHash": null,
+      "currentHash": "c947a17c5fae3fe7"
+    },
+    {
+      "id": "srs/5-data-requirements:internal",
+      "logicalPath": "srs/5-data-requirements",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.937Z",
+      "baselineHash": null,
+      "currentHash": "a5c749b4e4c28baf"
+    },
+    {
+      "id": "srs/6-external-interfaces:internal",
+      "logicalPath": "srs/6-external-interfaces",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.941Z",
+      "baselineHash": null,
+      "currentHash": "0a32260f458a83e3"
+    },
+    {
+      "id": "srs/7-quality-attributes:internal",
+      "logicalPath": "srs/7-quality-attributes",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.944Z",
+      "baselineHash": null,
+      "currentHash": "d363dcbf9290254a"
+    },
+    {
+      "id": "srs/8-internationalization:internal",
+      "logicalPath": "srs/8-internationalization",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.947Z",
+      "baselineHash": null,
+      "currentHash": "2ec9da47f39b9d44"
+    },
+    {
+      "id": "srs/9-other-requirements:internal",
+      "logicalPath": "srs/9-other-requirements",
+      "track": "internal",
+      "reason": "first_review",
+      "queuedAt": "2026-09-14T12:28:27.950Z",
+      "baselineHash": null,
+      "currentHash": "1c774e7eadd91004"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "screenId": "SCR-001",
+  "kind": "prototype_screen",
+  "displayName": "Login",
+  "documentEntityId": null,
+  "prototypePath": "",
+  "route_exists": false,
+  "reviewUrl": null,
+  "updatedAt": "2026-09-14T12:28:19.354Z"
+}

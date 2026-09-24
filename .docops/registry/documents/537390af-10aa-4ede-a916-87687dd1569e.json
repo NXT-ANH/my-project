@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "537390af-10aa-4ede-a916-87687dd1569e",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-08-receive-notifications-and-reminders.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-08-receive-notifications-and-reminders.md"
+  },
+  "displayName": "uc-08-receive-notifications-and-reminders",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.349Z",
+  "updatedAt": "2026-09-14T12:28:19.349Z"
+}

@@ -1,0 +1,14 @@
+{
+  "version": "0.4.1",
+  "skills": [
+    "kari-inspector",
+    "inspector-gen-test",
+    "inspector-gen-testplan",
+    "inspector-gen-viewpoint",
+    "inspector-review",
+    "inspector-review-notes",
+    "inspector-address-review",
+    "inspector-e2e"
+  ],
+  "installed_at": "2026-09-14T11:44:53.506Z"
+}

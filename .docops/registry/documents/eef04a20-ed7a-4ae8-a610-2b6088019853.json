@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "eef04a20-ed7a-4ae8-a610-2b6088019853",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-04-amend-and-resubmit-a-rejected-request.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-04-amend-and-resubmit-a-rejected-request.md"
+  },
+  "displayName": "uc-04-amend-and-resubmit-a-rejected-request",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.348Z",
+  "updatedAt": "2026-09-14T12:28:19.348Z"
+}

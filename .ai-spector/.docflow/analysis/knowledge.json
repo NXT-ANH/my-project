@@ -1,0 +1,764 @@
+{
+  "knowledgeVersion": 1,
+  "generatedAt": "2026-09-14T11:41:36.304950Z",
+  "scope": [
+    "Internal request management (annual leave, unpaid leave, late arrival/early leave, overtime, business trip, remote work, missed attendance record)",
+    "Multi-level approval workflow",
+    "Annual leave quota management",
+    "Notifications and reminders",
+    "Reporting and Excel export",
+    "User, department, role and system configuration"
+  ],
+  "actors": [
+    {
+      "id": "actor.employee",
+      "name": "Employee",
+      "title": "Employee",
+      "description": "Submits requests, tracks status, views remaining leave balance, cancels requests that are not yet approved. ~250 users across 3 branches (Hanoi, Da Nang, HCMC).",
+      "listedInSection": "sec.srs.2-overall-description.l3.3.22-user-classes-and-characteristics"
+    },
+    {
+      "id": "actor.line-manager",
+      "name": "Line Manager",
+      "title": "Line Manager",
+      "description": "Approves or rejects requests from their direct team; views the team leave calendar.",
+      "listedInSection": "sec.srs.2-overall-description.l3.3.22-user-classes-and-characteristics"
+    },
+    {
+      "id": "actor.hr",
+      "name": "HR Officer",
+      "title": "HR Officer",
+      "description": "Views all requests, configures request types and leave policy, adjusts leave balances, exports reports. Primary business owner of the system.",
+      "listedInSection": "sec.srs.2-overall-description.l3.3.22-user-classes-and-characteristics"
+    },
+    {
+      "id": "actor.executive",
+      "name": "Executive (Board of Directors)",
+      "title": "Executive (Board of Directors)",
+      "description": "Final approver for selected request types (e.g. overseas business trips); views consolidated reports.",
+      "listedInSection": "sec.srs.2-overall-description.l3.3.22-user-classes-and-characteristics"
+    },
+    {
+      "id": "actor.admin",
+      "name": "System Administrator",
+      "title": "System Administrator",
+      "description": "Manages users, departments, the management hierarchy, role permissions and system configuration.",
+      "listedInSection": "sec.srs.2-overall-description.l3.3.22-user-classes-and-characteristics"
+    }
+  ],
+  "useCases": [
+    {
+      "id": "UC-01",
+      "title": "Submit a request",
+      "priority": "High",
+      "description": "Employee selects a request type (annual leave, unpaid leave, late arrival/early leave, overtime, business trip, remote work, missed attendance record), fills the type-specific form, optionally attaches a file, and submits.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-02",
+      "title": "Track and cancel own requests",
+      "priority": "High",
+      "description": "Employee views the list of submitted requests with status (Pending / Approved / Rejected / Cancelled) and cancels a request while it is still unapproved.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-03",
+      "title": "Approve or reject a request",
+      "priority": "High",
+      "description": "Approver reviews a pending request and approves it or rejects it with a mandatory reason; multi-level flows forward the request to the next approver.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-04",
+      "title": "Amend and resubmit a rejected request",
+      "priority": "Medium",
+      "description": "Employee edits a rejected request and submits it again, restarting the approval flow.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-05",
+      "title": "Delegate approval authority",
+      "priority": "Low",
+      "description": "An approver who will be away delegates approval authority to another user (nice to have per RFP).",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-06",
+      "title": "View leave balance",
+      "priority": "High",
+      "description": "Employee views total / used / remaining annual leave days.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-07",
+      "title": "Adjust leave balance",
+      "priority": "Medium",
+      "description": "HR manually adjusts an employee's leave quota (seniority bonus days, carried-over days from the previous year).",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-08",
+      "title": "Receive notifications and reminders",
+      "priority": "High",
+      "description": "Approvers are notified of new pending requests, employees are notified of approval or rejection, and approvers are reminded when a request is untouched for more than 24 hours.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-09",
+      "title": "View team leave calendar",
+      "priority": "Medium",
+      "description": "Manager or team member views a department/team calendar showing who is on leave on which days.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-10",
+      "title": "Search and filter requests",
+      "priority": "Medium",
+      "description": "Users search and filter requests by person, request type, date range and status.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-11",
+      "title": "View and export reports",
+      "priority": "High",
+      "description": "HR and executives view leave statistics by employee, department and month, see employees running low on or under-using leave, and export reports to Excel.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-12",
+      "title": "Manage users, departments and permissions",
+      "priority": "High",
+      "description": "Administrator manages user accounts, departments, the reporting hierarchy (who manages whom), and role-based permissions.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-13",
+      "title": "Configure request types and approval workflows",
+      "priority": "High",
+      "description": "HR/Administrator defines request types and their multi-level approval routing through configuration, without code changes.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-14",
+      "title": "Configure public holidays",
+      "priority": "Medium",
+      "description": "Administrator maintains the yearly public holiday calendar used when computing leave day counts.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    },
+    {
+      "id": "UC-15",
+      "title": "Sign in with company email account",
+      "priority": "High",
+      "description": "User authenticates using the company email account, ideally reusing the existing corporate identity.",
+      "listedInSection": "sec.srs.3-use-cases.l3.3.32-list-use-case"
+    }
+  ],
+  "features": [
+    {
+      "id": "F-01",
+      "title": "Request submission and lifecycle management",
+      "description": "Type-driven request forms, automatic leave-day computation excluding weekends and holidays, half-day handling, file attachments, status tracking, cancellation while pending, and overlap prevention.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "satisfies": [
+        "UC-01",
+        "UC-02",
+        "UC-04"
+      ]
+    },
+    {
+      "id": "F-02",
+      "title": "Multi-level approval workflow",
+      "description": "Configurable multi-level approval routing driven by request type and duration, approve/reject with mandatory rejection reason, resubmission after rejection, and approval delegation.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "satisfies": [
+        "UC-03",
+        "UC-04",
+        "UC-05"
+      ]
+    },
+    {
+      "id": "F-03",
+      "title": "Annual leave balance management",
+      "description": "Per-employee annual leave quota with automatic deduction on approval and restoration on cancellation or rejection, manual HR adjustment, and total/used/remaining display.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "satisfies": [
+        "UC-06",
+        "UC-07"
+      ]
+    },
+    {
+      "id": "F-04",
+      "title": "Notification and reminder service",
+      "description": "In-app and email notifications for new pending requests and approval outcomes, plus reminders for requests pending longer than 24 hours; extensible to company chat tools.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "satisfies": [
+        "UC-08"
+      ]
+    },
+    {
+      "id": "F-05",
+      "title": "Leave calendar and request lookup",
+      "description": "Department/team leave calendar and search/filter over requests by person, type, date range and status.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "satisfies": [
+        "UC-09",
+        "UC-10"
+      ]
+    },
+    {
+      "id": "F-06",
+      "title": "Reporting and Excel export",
+      "description": "Leave statistics by employee, department and month, low-balance and under-used-leave lists, and Excel export of all reports.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "satisfies": [
+        "UC-11"
+      ]
+    },
+    {
+      "id": "F-07",
+      "title": "User, organization and access management",
+      "description": "User, department and reporting-hierarchy management, role-based permissions, and authentication with the company email account.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "satisfies": [
+        "UC-12",
+        "UC-15"
+      ]
+    },
+    {
+      "id": "F-08",
+      "title": "Request type, workflow and holiday configuration",
+      "description": "Configuration of request types, their form fields, approval routing rules and the yearly public holiday calendar without code changes.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "satisfies": [
+        "UC-13",
+        "UC-14"
+      ]
+    }
+  ],
+  "functionalRequirements": [
+    {
+      "id": "FR-01",
+      "title": "Employee selects a request type and completes the form defined for that type",
+      "description": "Each request type has its own set of fields.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "FR-02",
+      "title": "Annual leave request captures start date, end date, half-day option (morning/afternoon) and reason",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "FR-03",
+      "title": "System automatically computes the number of leave days, excluding weekends and public holidays",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "FR-04",
+      "title": "Employee can attach files to a request",
+      "description": "For example a medical certificate for sick leave.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "FR-05",
+      "title": "Employee can view the list of submitted requests with status Pending / Approved / Rejected / Cancelled",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "FR-06",
+      "title": "Employee can cancel a request while it has not yet been approved",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "FR-07",
+      "title": "System rejects a leave request whose date range overlaps an existing request of the same employee",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "FR-08",
+      "title": "Approval routing has multiple levels determined by request type and number of days",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "FR-09",
+      "title": "Annual leave of 2 days or fewer requires only line manager approval; more than 2 days requires line manager then HR",
+      "description": "Current company policy quoted in the RFP; must be configurable.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-02",
+        "F-08"
+      ]
+    },
+    {
+      "id": "FR-10",
+      "title": "Overseas business trip requires line manager, then HR, then Executive approval",
+      "description": "Current company policy quoted in the RFP; must be configurable.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-02",
+        "F-08"
+      ]
+    },
+    {
+      "id": "FR-11",
+      "title": "Approver can approve or reject a request; a rejection reason is mandatory",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "FR-12",
+      "title": "Employee can amend a rejected request and resubmit it",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "FR-13",
+      "title": "An approver can delegate approval authority while away",
+      "description": "Marked nice to have in the RFP.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "FR-14",
+      "title": "Each employee has an annual leave quota, defaulting to 12 days and varying by seniority",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "FR-15",
+      "title": "Approving a leave request deducts leave days; cancelling or rejecting restores them",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "FR-16",
+      "title": "HR can manually adjust an employee's leave quota",
+      "description": "For example seniority bonus days or days carried over from the previous year.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "FR-17",
+      "title": "System displays total, used and remaining leave days",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-03"
+      ]
+    },
+    {
+      "id": "FR-18",
+      "title": "Approver is notified when a new request requires their action",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-04"
+      ]
+    },
+    {
+      "id": "FR-19",
+      "title": "Employee is notified when their request is approved or rejected",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-04"
+      ]
+    },
+    {
+      "id": "FR-20",
+      "title": "Approver is reminded when a request has been pending for more than 24 hours",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-04"
+      ]
+    },
+    {
+      "id": "FR-21",
+      "title": "Notifications are delivered in-app and by email, with company chat tools as a desired additional channel",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-04"
+      ]
+    },
+    {
+      "id": "FR-22",
+      "title": "System shows a department/team leave calendar indicating who is absent on which days",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-05"
+      ]
+    },
+    {
+      "id": "FR-23",
+      "title": "Users can search and filter requests by person, request type, date range and status",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-05"
+      ]
+    },
+    {
+      "id": "FR-24",
+      "title": "System reports leave days taken by employee, by department and by month",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-06"
+      ]
+    },
+    {
+      "id": "FR-25",
+      "title": "System lists employees close to exhausting their leave and employees with large unused balances",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-06"
+      ]
+    },
+    {
+      "id": "FR-26",
+      "title": "Reports can be exported to Excel",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-06"
+      ]
+    },
+    {
+      "id": "FR-27",
+      "title": "Administrator manages users, departments and the management hierarchy",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-07"
+      ]
+    },
+    {
+      "id": "FR-28",
+      "title": "HR/Administrator can configure request types and their approval flows without code changes",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-08"
+      ]
+    },
+    {
+      "id": "FR-29",
+      "title": "Administrator can configure the public holidays of the year",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-08"
+      ]
+    },
+    {
+      "id": "FR-30",
+      "title": "Access is granted by role",
+      "description": "",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-07"
+      ]
+    },
+    {
+      "id": "FR-31",
+      "title": "Users sign in with their company email account",
+      "description": "Reusing the existing corporate account is preferred.",
+      "listedInSection": "sec.srs.4-system-features.l3.3.42-list-of-system-features",
+      "tracesTo": [
+        "F-07"
+      ]
+    }
+  ],
+  "nfrs": [
+    {
+      "id": "NFR-01",
+      "title": "User interface is in Vietnamese and simple enough for non-technical staff",
+      "description": "Usability requirement from RFP section 7.",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "NFR-02",
+      "title": "System works well on mobile devices (responsive web at minimum)",
+      "description": "",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": [
+        "F-01"
+      ]
+    },
+    {
+      "id": "NFR-03",
+      "title": "Authentication uses the company email account, preferably the existing corporate identity provider",
+      "description": "",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": [
+        "F-07"
+      ]
+    },
+    {
+      "id": "NFR-04",
+      "title": "An employee can only view their own requests; permissions are enforced by role",
+      "description": "",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": [
+        "F-07"
+      ]
+    },
+    {
+      "id": "NFR-05",
+      "title": "System keeps an operation history recording who approved what and when",
+      "description": "Audit trail for later reconciliation.",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": [
+        "F-02"
+      ]
+    },
+    {
+      "id": "NFR-06",
+      "title": "System runs stably during business hours for approximately 250 users",
+      "description": "",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": []
+    },
+    {
+      "id": "NFR-07",
+      "title": "Data is backed up periodically",
+      "description": "",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": []
+    },
+    {
+      "id": "NFR-08",
+      "title": "Cloud deployment is preferred; on-premise requires further discussion",
+      "description": "Constraint from RFP section 8.",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": []
+    },
+    {
+      "id": "NFR-09",
+      "title": "Leave policy is configurable and can change year over year without code changes",
+      "description": "",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": [
+        "F-08"
+      ]
+    },
+    {
+      "id": "NFR-10",
+      "title": "System is extensible: new request types can be added and attendance-device integration is possible later",
+      "description": "Evaluation criterion from RFP section 11.",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": [
+        "F-08"
+      ]
+    },
+    {
+      "id": "NFR-11",
+      "title": "Target go-live is approximately 3 months, with phase 1 covering annual leave, approval and basic reporting",
+      "description": "Schedule expectation from RFP section 10.",
+      "listedInSection": "sec.srs.7-quality-attributes.l2.1.7-non-functional-requirements-quality-attributes",
+      "tracesTo": []
+    }
+  ],
+  "entities": [
+    {
+      "id": "ENT-Employee",
+      "name": "Employee",
+      "description": "A staff member of the company, belonging to a department and reporting to a line manager.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-Department",
+      "name": "Department",
+      "description": "An organizational unit; used for the team leave calendar and departmental reporting.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-Request",
+      "name": "Request",
+      "description": "A submitted request of any type, with status Pending / Approved / Rejected / Cancelled.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-RequestType",
+      "name": "RequestType",
+      "description": "A configurable request category (annual leave, unpaid leave, late arrival/early leave, overtime, business trip, remote work, missed attendance) with its own form fields.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-ApprovalWorkflow",
+      "name": "ApprovalWorkflow",
+      "description": "Configured approval routing for a request type, including level order and conditions such as number of days.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-ApprovalStep",
+      "name": "ApprovalStep",
+      "description": "One approval level of a request instance, recording approver, decision, reason and timestamp.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-Delegation",
+      "name": "Delegation",
+      "description": "Temporary transfer of approval authority from one approver to another during an absence.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-LeaveBalance",
+      "name": "LeaveBalance",
+      "description": "An employee's annual leave quota for a year with total, used and remaining days.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-LeaveAdjustment",
+      "name": "LeaveAdjustment",
+      "description": "A manual HR change to a leave balance, with reason and actor.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-Attachment",
+      "name": "Attachment",
+      "description": "A file attached to a request, such as a medical certificate.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-Holiday",
+      "name": "Holiday",
+      "description": "A public holiday date excluded from leave day computation.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-Notification",
+      "name": "Notification",
+      "description": "An in-app or email message sent to an approver or requester, including 24-hour reminders.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-Role",
+      "name": "Role",
+      "description": "A permission set assigned to users (Employee, Line Manager, HR, Executive, Administrator).",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    },
+    {
+      "id": "ENT-AuditLog",
+      "name": "AuditLog",
+      "description": "Operation history record of who performed which action on which object and when.",
+      "listedInSection": "sec.srs.5-data-requirements.l3.2.51-logical-data-model"
+    }
+  ],
+  "constraints": [
+    {
+      "id": "CON-01",
+      "description": "Cloud infrastructure preferred; on-premise deployment requires further discussion."
+    },
+    {
+      "id": "CON-02",
+      "description": "The company already uses a corporate email system; single sign-on with existing accounts is desired."
+    },
+    {
+      "id": "CON-03",
+      "description": "Leave policy changes yearly and must be configurable rather than hard-coded."
+    },
+    {
+      "id": "CON-04",
+      "description": "Deliverables include a working responsive web system, user guides for employees and HR, training for HR and admins, and source code handover."
+    },
+    {
+      "id": "CON-05",
+      "description": "Desired go-live within about 3 months, phased delivery acceptable."
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "Q-001",
+      "question": "Which fields does each non-leave request type require (overtime, business trip, remote work, missed attendance)? Only the annual leave form is described."
+    },
+    {
+      "id": "Q-002",
+      "question": "What is the exact seniority rule that changes the annual leave quota from the 12-day default?"
+    },
+    {
+      "id": "Q-003",
+      "question": "Do leave days carried over from the previous year expire, and if so when?"
+    },
+    {
+      "id": "Q-004",
+      "question": "Which chat tool should notifications integrate with (Slack, Microsoft Teams, other)?"
+    },
+    {
+      "id": "Q-005",
+      "question": "Which identity provider backs the company email account (Google Workspace, Microsoft 365, other) and is SSO in scope for phase 1?"
+    },
+    {
+      "id": "Q-006",
+      "question": "Is approval delegation (nice to have) in scope for phase 1?"
+    },
+    {
+      "id": "Q-007",
+      "question": "How are pending requests handled when an employee changes department or leaves the company?"
+    },
+    {
+      "id": "Q-008",
+      "question": "Does the interface need any language other than Vietnamese, given the project documentation language is English?"
+    },
+    {
+      "id": "Q-009",
+      "question": "What are the data retention and backup frequency requirements?"
+    },
+    {
+      "id": "Q-010",
+      "question": "Should historical paper/Excel request data be migrated into the new system?"
+    }
+  ]
+}

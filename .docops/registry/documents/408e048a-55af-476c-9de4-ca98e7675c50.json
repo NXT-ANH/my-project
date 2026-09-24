@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "408e048a-55af-476c-9de4-ca98e7675c50",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/5-data-requirements.md",
+  "repoDocs": {
+    "en": "docs/srs/en/5-data-requirements.md"
+  },
+  "displayName": "5-data-requirements",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.352Z",
+  "updatedAt": "2026-09-14T12:28:19.352Z"
+}

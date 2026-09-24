@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "f78c0bd9-979c-4b57-97ba-fd56e7dad045",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/4-system-features.md",
+  "repoDocs": {
+    "en": "docs/srs/en/4-system-features.md"
+  },
+  "displayName": "4-system-features",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.352Z",
+  "updatedAt": "2026-09-14T12:28:19.352Z"
+}

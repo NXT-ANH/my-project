@@ -1,0 +1,681 @@
+{
+  "version": 1,
+  "id": "task-mu16tbqz",
+  "kind": "generate",
+  "workflow": "generate-srs",
+  "status": "complete",
+  "createdAt": "2026-09-14T11:56:32.283Z",
+  "updatedAt": "2026-09-14T12:34:19.472Z",
+  "trigger": "generate SRS",
+  "phase": "extract",
+  "phaseStatus": "done",
+  "goal": {
+    "trigger": "generate SRS",
+    "domain": "docs",
+    "scope": [
+      "docs/srs/en/"
+    ],
+    "criteria": [
+      "All 11 SRS DAG nodes generated to docs/srs/en/ in English",
+      "Content grounded in the traceability graph (15 UC, 8 features, 31 FR, 14 entities, 11 NFR, 5 actors) and the RFP data-source — nothing invented",
+      "3 high-severity gaps recorded as explicit TBD with owners; 9 medium/low gaps recorded as labelled assumptions",
+      "graph validate passes and index refreshed after waves"
+    ],
+    "notes": "Clarifications Q-001..Q-004 recorded in .ai-spector/.docflow/context/srs.json"
+  },
+  "plan": {
+    "kind": "generate",
+    "plan": {
+      "docType": "srs",
+      "language": "en",
+      "scope": "all",
+      "scopeDetail": "Full SRS — all 11 DAG nodes, 32 files to docs/srs/en/. First generation; docs/srs/en/ was empty.",
+      "briefing": [
+        {
+          "target": "1-introduction.md",
+          "graphContext": "8 feature nodes, 5 actor nodes",
+          "dataSourceFiles": [
+            "docs/data-source/rfp-he-thong-quan-ly-don-tu.md"
+          ],
+          "contextAnswers": [
+            "Q-001",
+            "Q-004"
+          ],
+          "assumptions": [
+            "References list the RFP only — no BRS/StRS/SyRS exist",
+            "Glossary built from RFP domain terms"
+          ],
+          "template": ".ai-spector/templates/srs/1-introduction.md",
+          "excluded": "payroll, attendance devices, KPI management"
+        },
+        {
+          "target": "2-overall-description.md",
+          "graphContext": "5 actors, 11 NFRs",
+          "dataSourceFiles": [
+            "docs/data-source/rfp-he-thong-quan-ly-don-tu.md",
+            ".ai-spector/.docflow/analysis/scope.json"
+          ],
+          "contextAnswers": [
+            "Q-003"
+          ],
+          "assumptions": [
+            "Standalone cloud web app replacing paper/Excel (inferred, flagged)",
+            "~250 users across 3 branches",
+            "All 9 accepted assumptions listed in §2.6"
+          ],
+          "template": ".ai-spector/templates/srs/2-overall-description.md"
+        },
+        {
+          "target": "3-use-cases.md",
+          "graphContext": "15 useCase nodes with priorities",
+          "assumptions": [
+            "UC relationships derived from graph edges only",
+            "UC-05 delegation flagged deferred past phase 1"
+          ],
+          "template": ".ai-spector/templates/srs/3-use-cases.md"
+        },
+        {
+          "target": "03-use-cases/uc-01..15-*.md",
+          "graphContext": "per-UC node, actor and FR edges",
+          "assumptions": [
+            "Alternative and exception flows only where the RFP states them; otherwise marked not specified in source"
+          ],
+          "template": ".ai-spector/templates/srs/3-use-case-detail-template.md"
+        },
+        {
+          "target": "4-system-features.md",
+          "graphContext": "8 feature nodes, 56 traceability edges",
+          "assumptions": [
+            "Features grouped by functional domain (§4-004 was missing — stated as author choice)"
+          ],
+          "template": ".ai-spector/templates/srs/4-system-features-list-template.md"
+        },
+        {
+          "target": "04-features/f-01..08-*.md",
+          "graphContext": "per-feature node and its FRs (7/4/4/4/2/3/3/2)",
+          "assumptions": [
+            "TBD-001 form fields for 6 non-annual-leave types recorded in F-01",
+            "TBD-002 seniority tiers and TBD-004 carryover expiry recorded in F-03"
+          ],
+          "template": ".ai-spector/templates/srs/4-system-feature-detail-template.md"
+        },
+        {
+          "target": "5-data-requirements.md",
+          "graphContext": "14 dataEntity nodes",
+          "assumptions": [
+            "Relationships and cardinality derived from entity semantics, flagged as derived not RFP-stated"
+          ],
+          "template": ".ai-spector/templates/srs/5-data-requirements.md"
+        },
+        {
+          "target": "6-external-interfaces.md",
+          "graphContext": "NFR-03, NFR-10",
+          "assumptions": [
+            "TBD-003 identity provider and phase-1 SSO",
+            "Attendance-device interface is a future-scope placeholder",
+            "Company chat channel unnamed, treated as future channel alongside email"
+          ],
+          "template": ".ai-spector/templates/srs/6-external-interfaces.md"
+        },
+        {
+          "target": "7-quality-attributes.md",
+          "graphContext": "11 NFR nodes",
+          "assumptions": [
+            "TBD-005 backup RPO/RTO/retention",
+            "Performance targets derived from 250 users during business hours"
+          ],
+          "template": ".ai-spector/templates/srs/7-quality-attributes.md"
+        },
+        {
+          "target": "8-internationalization.md",
+          "graphContext": "NFR-01",
+          "contextAnswers": [
+            "Q-004"
+          ],
+          "assumptions": [
+            "Product UI locale vi-VN; documentation language remains English"
+          ],
+          "template": ".ai-spector/templates/srs/8-internationalization.md"
+        },
+        {
+          "target": "9-other-requirements.md",
+          "graphContext": "NFR-05, NFR-07, NFR-09",
+          "assumptions": [
+            "Historical paper/Excel data migration declared out of scope"
+          ],
+          "template": ".ai-spector/templates/srs/9-other-requirements.md"
+        }
+      ],
+      "rows": [
+        {
+          "output": "docs/srs/en/1-introduction.md",
+          "dagNode": "srs.introduction",
+          "sources": [
+            "docs/data-source/rfp-he-thong-quan-ly-don-tu.md",
+            "graph:feature",
+            "graph:actor"
+          ],
+          "keyPoints": [
+            "Purpose and intended audience",
+            "Product scope from 8 features",
+            "Glossary of RFP domain terms",
+            "References = RFP only"
+          ],
+          "criteriaIds": [
+            "§1-001",
+            "§1-002",
+            "§1-003",
+            "§1-004",
+            "§1-005",
+            "§1-006",
+            "G-001",
+            "G-003",
+            "G-006"
+          ],
+          "isoRefs": [
+            "9.6.1",
+            "9.6.2",
+            "9.6.3",
+            "9.6.5"
+          ]
+        },
+        {
+          "output": "docs/srs/en/2-overall-description.md",
+          "dagNode": "srs.overall-description",
+          "sources": [
+            "docs/data-source/rfp-he-thong-quan-ly-don-tu.md",
+            "graph:actor",
+            "graph:nfr",
+            ".ai-spector/.docflow/analysis/scope.json"
+          ],
+          "keyPoints": [
+            "Product perspective: standalone cloud web app replacing paper/Excel",
+            "5 user classes with skill and frequency",
+            "Operating environment ~250 users, 3 branches",
+            "Assumptions block with 9 accepted assumptions",
+            "External dependencies"
+          ],
+          "criteriaIds": [
+            "§2-001",
+            "§2-002",
+            "§2-003",
+            "§2-004",
+            "§2-005",
+            "§2-006",
+            "§2-007",
+            "§2-008",
+            "§2-009",
+            "G-010",
+            "G-014",
+            "G-018",
+            "G-019"
+          ],
+          "isoRefs": [
+            "9.6.4",
+            "9.6.6",
+            "9.6.7",
+            "9.6.8"
+          ]
+        },
+        {
+          "output": "docs/srs/en/3-use-cases.md",
+          "dagNode": "srs.use-cases",
+          "sources": [
+            "graph:useCase"
+          ],
+          "keyPoints": [
+            "UC-01..15 index table with actor and priority",
+            "Relationships from graph edges only",
+            "UC-05 flagged deferred"
+          ],
+          "criteriaIds": [
+            "§3-001",
+            "§3-002",
+            "§3-003",
+            "§3-004",
+            "§3-005"
+          ],
+          "isoRefs": [
+            "9.6.5",
+            "5.2.8",
+            "9.4.17"
+          ]
+        },
+        {
+          "output": "docs/srs/en/03-use-cases/uc-{nn}-{slug}.md (15 files)",
+          "dagNode": "srs.use-case-detail",
+          "sources": [
+            "graph:useCase",
+            "graph:actor",
+            "graph:requirement"
+          ],
+          "keyPoints": [
+            "Actors, trigger, preconditions and postconditions",
+            "Numbered main success scenario",
+            "Alternative and exception flows",
+            "Business rules and related use cases"
+          ],
+          "criteriaIds": [
+            "UC-001",
+            "UC-002",
+            "UC-003",
+            "UC-004",
+            "UC-005",
+            "UC-006",
+            "UC-007",
+            "UC-008"
+          ],
+          "isoRefs": [
+            "9.6.12",
+            "9.6.12.b",
+            "9.6.12.c",
+            "9.6.10"
+          ]
+        },
+        {
+          "output": "docs/srs/en/4-system-features.md",
+          "dagNode": "srs.features-list",
+          "sources": [
+            "graph:feature",
+            "graph:edges"
+          ],
+          "keyPoints": [
+            "F-01..08 with priority",
+            "Feature to use-case traceability matrix"
+          ],
+          "criteriaIds": [
+            "§4-001",
+            "§4-002",
+            "§4-003",
+            "§4-004"
+          ],
+          "isoRefs": [
+            "9.6.5",
+            "9.6.9",
+            "9.6.10",
+            "5.2.8"
+          ]
+        },
+        {
+          "output": "docs/srs/en/04-features/f-{nn}-{slug}.md (8 files)",
+          "dagNode": "srs.feature-details",
+          "sources": [
+            "graph:feature",
+            "graph:requirement"
+          ],
+          "keyPoints": [
+            "Description and scope per feature",
+            "FR table (31 FRs distributed)",
+            "Verifiable acceptance criteria",
+            "Error handling, I/O, dependencies",
+            "TBD-001 in F-01; TBD-002 and TBD-004 in F-03"
+          ],
+          "criteriaIds": [
+            "F-001",
+            "F-002",
+            "F-003",
+            "F-004",
+            "F-005",
+            "F-006",
+            "F-007",
+            "F-008"
+          ],
+          "isoRefs": [
+            "9.6.10",
+            "9.6.12",
+            "5.2.5",
+            "9.6.19"
+          ]
+        },
+        {
+          "output": "docs/srs/en/5-data-requirements.md",
+          "dagNode": "srs.data-requirements",
+          "sources": [
+            "graph:dataEntity",
+            "graph:nfr"
+          ],
+          "keyPoints": [
+            "14-entity catalogue with fields",
+            "Relationships and cardinality (derived, flagged)",
+            "Integrity constraints",
+            "Classification and retention"
+          ],
+          "criteriaIds": [
+            "§5-001",
+            "§5-002",
+            "§5-003",
+            "§5-004",
+            "§5-005",
+            "§5-006",
+            "§5-007"
+          ],
+          "isoRefs": [
+            "9.6.15.b",
+            "9.6.15.d",
+            "9.6.15.e",
+            "9.6.15.f",
+            "9.6.15.g"
+          ]
+        },
+        {
+          "output": "docs/srs/en/6-external-interfaces.md",
+          "dagNode": "srs.external-interfaces",
+          "sources": [
+            "graph:nfr",
+            "graph:actor"
+          ],
+          "keyPoints": [
+            "UI channels — responsive web",
+            "TBD-003 identity provider and SSO scope",
+            "Attendance-device future interface placeholder",
+            "Email and chat notification channels"
+          ],
+          "criteriaIds": [
+            "§6-001",
+            "§6-002",
+            "§6-003",
+            "§6-004",
+            "§6-005",
+            "§6-006",
+            "§6-007"
+          ],
+          "isoRefs": [
+            "9.6.4.2",
+            "9.6.4.3",
+            "9.6.4.4",
+            "9.6.4.5",
+            "9.6.4.9",
+            "9.6.11"
+          ]
+        },
+        {
+          "output": "docs/srs/en/7-quality-attributes.md",
+          "dagNode": "srs.quality-attributes",
+          "sources": [
+            "graph:nfr"
+          ],
+          "keyPoints": [
+            "Performance for 250 users in business hours",
+            "Security and RBAC per NFR-04",
+            "Audit trail per NFR-05",
+            "TBD-005 backup RPO/RTO",
+            "Maintainability, portability, scalability"
+          ],
+          "criteriaIds": [
+            "§7-001",
+            "§7-002",
+            "§7-003",
+            "§7-004",
+            "§7-005",
+            "§7-006",
+            "§7-007"
+          ],
+          "isoRefs": [
+            "9.6.13",
+            "9.6.14",
+            "9.6.18"
+          ]
+        },
+        {
+          "output": "docs/srs/en/8-internationalization.md",
+          "dagNode": "srs.internationalization",
+          "sources": [
+            "graph:nfr"
+          ],
+          "keyPoints": [
+            "Product UI locale vi-VN",
+            "Date, number and currency formatting",
+            "Regional compliance",
+            "Documentation language remains English"
+          ],
+          "criteriaIds": [
+            "§8-001",
+            "§8-002",
+            "§8-003",
+            "§8-004"
+          ],
+          "isoRefs": [
+            "9.6.17"
+          ]
+        },
+        {
+          "output": "docs/srs/en/9-other-requirements.md",
+          "dagNode": "srs.other-requirements",
+          "sources": [
+            "graph:nfr"
+          ],
+          "keyPoints": [
+            "Legal and regulatory compliance",
+            "Installation and configuration",
+            "Logging, monitoring and audit trail",
+            "Design constraints",
+            "Data migration out of scope"
+          ],
+          "criteriaIds": [
+            "§9-001",
+            "§9-002",
+            "§9-003",
+            "§9-004",
+            "§9-005"
+          ],
+          "isoRefs": [
+            "9.6.16",
+            "9.6.17",
+            "9.6.19",
+            "9.6.20"
+          ]
+        }
+      ],
+      "waves": [
+        {
+          "wave": 1,
+          "nodeIds": [
+            "srs.introduction",
+            "srs.overall-description"
+          ]
+        },
+        {
+          "wave": 2,
+          "nodeIds": [
+            "srs.use-cases",
+            "srs.features-list"
+          ]
+        },
+        {
+          "wave": 3,
+          "nodeIds": [
+            "srs.use-case-detail",
+            "srs.feature-details"
+          ]
+        },
+        {
+          "wave": 4,
+          "nodeIds": [
+            "srs.data-requirements",
+            "srs.external-interfaces",
+            "srs.quality-attributes",
+            "srs.internationalization",
+            "srs.other-requirements"
+          ]
+        }
+      ]
+    }
+  },
+  "planApprovedAt": "2026-09-14T12:05:51.908Z",
+  "steps": [
+    {
+      "id": "check",
+      "phase": "check",
+      "description": "Validate workspace structure",
+      "status": "done",
+      "blocker": null,
+      "artifacts": [],
+      "completedAt": "2026-09-14T11:56:43.297Z"
+    },
+    {
+      "id": "clarify",
+      "phase": "clarify",
+      "description": "Resolve clarification gaps",
+      "status": "done",
+      "blocker": null,
+      "artifacts": [],
+      "completedAt": "2026-09-14T11:59:40.984Z",
+      "openContextIds": []
+    },
+    {
+      "id": "briefing",
+      "phase": "briefing",
+      "description": "Confirm context briefing with user",
+      "status": "done",
+      "blocker": null,
+      "artifacts": [],
+      "completedAt": "2026-09-14T12:00:30.000Z"
+    },
+    {
+      "id": "plan",
+      "phase": "plan",
+      "description": "Present plan table and get approval",
+      "status": "done",
+      "blocker": null,
+      "artifacts": [],
+      "completedAt": "2026-09-14T12:05:51.908Z"
+    },
+    {
+      "id": "wave-1",
+      "phase": "generate",
+      "description": "Generate wave 1 (srs.introduction, srs.overall-description)",
+      "status": "done",
+      "blocker": null,
+      "artifacts": [
+        "docs/srs/en/1-introduction.md",
+        "docs/srs/en/2-overall-description.md"
+      ],
+      "completedAt": "2026-09-14T12:08:52.036Z"
+    },
+    {
+      "id": "wave-2",
+      "phase": "generate",
+      "description": "Generate wave 2 (srs.use-cases, srs.features-list)",
+      "status": "done",
+      "blocker": null,
+      "artifacts": [
+        "docs/srs/en/3-use-cases.md",
+        "docs/srs/en/4-system-features.md"
+      ],
+      "completedAt": "2026-09-14T12:10:39.176Z"
+    },
+    {
+      "id": "wave-3",
+      "phase": "generate",
+      "description": "Generate wave 3 (srs.use-case-detail, srs.feature-details)",
+      "status": "done",
+      "blocker": null,
+      "artifacts": [
+        "docs/srs/en/03-use-cases/uc-01-submit-a-request.md",
+        "docs/srs/en/03-use-cases/uc-02-track-and-cancel-own-requests.md",
+        "docs/srs/en/03-use-cases/uc-03-approve-or-reject-a-request.md",
+        "docs/srs/en/03-use-cases/uc-04-amend-and-resubmit-a-rejected-request.md",
+        "docs/srs/en/03-use-cases/uc-05-delegate-approval-authority.md",
+        "docs/srs/en/03-use-cases/uc-06-view-leave-balance.md",
+        "docs/srs/en/03-use-cases/uc-07-adjust-leave-balance.md",
+        "docs/srs/en/03-use-cases/uc-08-receive-notifications-and-reminders.md",
+        "docs/srs/en/03-use-cases/uc-09-view-team-leave-calendar.md",
+        "docs/srs/en/03-use-cases/uc-10-search-and-filter-requests.md",
+        "docs/srs/en/03-use-cases/uc-11-view-and-export-reports.md",
+        "docs/srs/en/03-use-cases/uc-12-manage-users-departments-and-permissions.md",
+        "docs/srs/en/03-use-cases/uc-13-configure-request-types-and-approval-workflows.md",
+        "docs/srs/en/03-use-cases/uc-14-configure-public-holidays.md",
+        "docs/srs/en/03-use-cases/uc-15-sign-in-with-company-email-account.md",
+        "docs/srs/en/04-system-features/f-01-request-submission-and-lifecycle-management.md",
+        "docs/srs/en/04-system-features/f-02-multi-level-approval-workflow.md",
+        "docs/srs/en/04-system-features/f-03-annual-leave-balance-management.md",
+        "docs/srs/en/04-system-features/f-04-notification-and-reminder-service.md",
+        "docs/srs/en/04-system-features/f-05-leave-calendar-and-request-lookup.md",
+        "docs/srs/en/04-system-features/f-06-reporting-and-excel-export.md",
+        "docs/srs/en/04-system-features/f-07-user-organization-and-access-management.md",
+        "docs/srs/en/04-system-features/f-08-request-type-workflow-and-holiday-configuration.md"
+      ],
+      "completedAt": "2026-09-14T12:23:09.007Z"
+    },
+    {
+      "id": "wave-4",
+      "phase": "generate",
+      "description": "Generate wave 4 (srs.data-requirements, srs.external-interfaces, srs.quality-attributes, srs.internationalization, srs.other-requirements)",
+      "status": "done",
+      "blocker": null,
+      "artifacts": [
+        "docs/srs/en/5-data-requirements.md",
+        "docs/srs/en/6-external-interfaces.md",
+        "docs/srs/en/7-quality-attributes.md",
+        "docs/srs/en/8-internationalization.md",
+        "docs/srs/en/9-other-requirements.md"
+      ],
+      "completedAt": "2026-09-14T12:28:15.242Z"
+    },
+    {
+      "id": "extract",
+      "phase": "extract",
+      "description": "Extract specs and offer review queue",
+      "status": "done",
+      "blocker": null,
+      "artifacts": [
+        ".ai-spector/.docflow/extracted/srs.json"
+      ],
+      "completedAt": "2026-09-14T12:34:05.050Z"
+    }
+  ],
+  "currentStepId": "extract",
+  "nextAction": "Full SRS generated for the Internal Request Management System (IRMS) from the RFP data-source and the traceability graph. 32 files written to docs/srs/en/ across 4 DAG waves: §1 Introduction, §2 Overall Description, §3 Use Cases index + 15 per-UC detail files, §4 System Features register + 8 per-feature detail files, §5 Data Requirements, §6 External Interfaces, §7 Quality Attributes, §8 Internationalization, §9 Other Requirements. All 15 use cases, 8 features, 31 functional requirements, 14 data entities, 11 NFRs and 5 actors from the graph are allocated with full bidirectional traceability and no orphans. 51 open issues (TBD-001..051) recorded with named owners per ISO/IEC/IEEE 29148 §5.2.6; 3 are blocking (TBD-001 request-type form fields/HR, TBD-002 seniority quota tiers/HR, TBD-003 identity provider and SSO scope/IT) and were queued as SPEC-001..003 for human review. 12 labelled assumptions A-01..A-12 recorded in §2.5. readiness_scan: 32 documents, 0 errors. graph_validate: OK. index: graph 372 to 688 nodes, 966 to 1900 edges; 32 documents queued for internal review. Clarifications Q-001..Q-004 recorded in the context store.",
+  "blockers": [],
+  "contextRefs": {
+    "docType": "srs",
+    "contextFile": "context/srs.json",
+    "extractedFile": "extracted/srs.json",
+    "planLog": ".ai-spector/.docflow/logs/plan-srs-1789387551946.json"
+  },
+  "snapshot": {
+    "sourceMode": "forward",
+    "derivePhase": "extract",
+    "workspaceCheckAt": "2026-09-14T11:56:43.297Z",
+    "readinessReportShown": true,
+    "readinessReviewedAt": "2026-09-14T11:59:40.984Z",
+    "briefingConfirmedAt": "2026-09-14T12:00:30.000Z",
+    "planPresentedAt": "2026-09-14T12:01:30.000Z",
+    "artifactHashes": {
+      "docs/srs/en/1-introduction.md": "sha256:f095bb8173613d693ea6d2b30d3f1ab34e9311ffcdc95702a809f257be40f4fe",
+      "docs/srs/en/2-overall-description.md": "sha256:7ab5461874d59982c76f054176a376e30ac7c279bcc2a524224360ae592e9f72",
+      "docs/srs/en/3-use-cases.md": "sha256:ef245d3797ae953ba91d73267b5fca6fc79422e8bb85b7359a0d1cf89a2eb57b",
+      "docs/srs/en/4-system-features.md": "sha256:c947a17c5fae3fe7ded503a2780a7125965489ab9dbbf2cda08bb656cf0aa3a4",
+      "docs/srs/en/03-use-cases/uc-01-submit-a-request.md": "sha256:e3afd6c633cbc6ed965792b43aea77e9e3d88131f05024490c14be6594f477d4",
+      "docs/srs/en/03-use-cases/uc-02-track-and-cancel-own-requests.md": "sha256:01694289c7201cdf3d6809d9283ddddf486cf0e1629114ed7be8f1dfcfccd6a2",
+      "docs/srs/en/03-use-cases/uc-03-approve-or-reject-a-request.md": "sha256:14df99775c09528be06d406c3b43475c60c9cc462ae0f7d821f58d7f1add4b4f",
+      "docs/srs/en/03-use-cases/uc-04-amend-and-resubmit-a-rejected-request.md": "sha256:dcab64b2c4033d33a966aea610365a9d05c7eeae5235696d18fd4ee4b5e0d636",
+      "docs/srs/en/03-use-cases/uc-05-delegate-approval-authority.md": "sha256:a4d47972649c0718a88437dbab04de89ab43f05c6d8bd20585740dc5ce77884d",
+      "docs/srs/en/03-use-cases/uc-06-view-leave-balance.md": "sha256:fa07d1b9cb2a22a703a5bd1be6a3f668bb49477d89832e255e1dab43c069cac9",
+      "docs/srs/en/03-use-cases/uc-07-adjust-leave-balance.md": "sha256:c6ebcb889d32b005a37bdba1cc294b145710bb7a902a904c245b68499c7dd39b",
+      "docs/srs/en/03-use-cases/uc-08-receive-notifications-and-reminders.md": "sha256:edc901b96eecb828b465c90713acc957c5c7c40ca9c7f9992ad6a6314343cb66",
+      "docs/srs/en/03-use-cases/uc-09-view-team-leave-calendar.md": "sha256:d5f9752274ddd92884e0cdf7712ef130efeaf01136272efe07a44a5dc1214c54",
+      "docs/srs/en/03-use-cases/uc-10-search-and-filter-requests.md": "sha256:9f32d48f6150741a7ded1f9e7c94cc89a81e52d88bbb85af5aa6f60d0d7448ef",
+      "docs/srs/en/03-use-cases/uc-11-view-and-export-reports.md": "sha256:d66bc2ec9d373d27cf37d0f3ecf3aaad2ad58ef915acc01da1df8949e7631b2e",
+      "docs/srs/en/03-use-cases/uc-12-manage-users-departments-and-permissions.md": "sha256:d6cccdc71c33e397c1500db2e06ad8a69624efb62baa99e20b83cddfda2f9fb2",
+      "docs/srs/en/03-use-cases/uc-13-configure-request-types-and-approval-workflows.md": "sha256:db08ed3b64ef5c3d1da6ca301a442cc53e265c8337a6cc60f8f4e5aca973e65b",
+      "docs/srs/en/03-use-cases/uc-14-configure-public-holidays.md": "sha256:14f0d1410fb31d786a0d1936416ad9365e624d12b6dcc90a29b5154c133203fb",
+      "docs/srs/en/03-use-cases/uc-15-sign-in-with-company-email-account.md": "sha256:bf13ab05a3ab55edda22686c6ad831f24eae1615aca71fc0df2ed7732484b3d1",
+      "docs/srs/en/04-system-features/f-01-request-submission-and-lifecycle-management.md": "sha256:5bf6a29a11b7a7eaec1c5c6ad90acab9dc7e96107c3ae66adf23e10da6814ff5",
+      "docs/srs/en/04-system-features/f-02-multi-level-approval-workflow.md": "sha256:0662db6a8f2a109260548fddf683e92ce0a9723b23cd6c374fbdeb1ef9f89a20",
+      "docs/srs/en/04-system-features/f-03-annual-leave-balance-management.md": "sha256:fe5c23427f3f3f1115f96436f2534962b1b8185f2a8cc62cd4017e27080f7bdc",
+      "docs/srs/en/04-system-features/f-04-notification-and-reminder-service.md": "sha256:f5cba9783c71ff48db53ad7ae7ac30241eb8f31b3ee0608c352e6df713b331f1",
+      "docs/srs/en/04-system-features/f-05-leave-calendar-and-request-lookup.md": "sha256:404eee2c4ccaff3261602703929c7a43ad8361f9aa805743114985e8204622be",
+      "docs/srs/en/04-system-features/f-06-reporting-and-excel-export.md": "sha256:fea18d94ad6cb36c3060ad8189e1b6ecdad1c604cf6a5676de9aaab8dde07d8c",
+      "docs/srs/en/04-system-features/f-07-user-organization-and-access-management.md": "sha256:659f0ca721a5e9d1f05e112bbdfa81ad8855d263dce5ed0dc6c08d436fe4fa2b",
+      "docs/srs/en/04-system-features/f-08-request-type-workflow-and-holiday-configuration.md": "sha256:ba402214b0892e14560c11bd3ffebcdc7c2414bc5a4b8de952683dc45126cfa0",
+      "docs/srs/en/5-data-requirements.md": "sha256:a5c749b4e4c28baf484e8b3e7e25968ea09e01b75fe315f912a7e22f7a5f7dee",
+      "docs/srs/en/6-external-interfaces.md": "sha256:0a32260f458a83e3a0517068e22928eff39baba2b571fca455016ba97b22c7a2",
+      "docs/srs/en/7-quality-attributes.md": "sha256:d363dcbf9290254aca8feab300afdf5f03aa2da3952c0617ece965b99e13945b",
+      "docs/srs/en/8-internationalization.md": "sha256:2ec9da47f39b9d445506fb6be64cd52997444145a3179aaacc2e2cbe9f248c31",
+      "docs/srs/en/9-other-requirements.md": "sha256:1c774e7eadd9100464f3288c6706fb60e092d520ac44b83b1917741437a7abde",
+      ".ai-spector/.docflow/extracted/srs.json": "sha256:9a15c0f1922aa4d20abf7b099da4c27d67b8e4cb810cf3e3050b4946a033f472"
+    },
+    "extractOffered": true
+  }
+}

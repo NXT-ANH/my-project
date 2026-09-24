@@ -1,0 +1,76 @@
+{
+  "gaps": [
+    {
+      "id": "gap.request-type-fields",
+      "description": "Form fields are specified only for annual leave; the other six request types have no field definitions.",
+      "category": "missing-requirement",
+      "severity": "high"
+    },
+    {
+      "id": "gap.seniority-policy",
+      "description": "Annual leave quota 'varies by seniority' with no stated formula or tiers.",
+      "category": "missing-requirement",
+      "severity": "high"
+    },
+    {
+      "id": "gap.carryover-expiry",
+      "description": "Carried-over leave from the previous year is mentioned for manual HR adjustment but no expiry or cap rule is given.",
+      "category": "missing-requirement",
+      "severity": "medium"
+    },
+    {
+      "id": "gap.half-day-accounting",
+      "description": "Half-day leave is supported but the RFP does not state how it is counted against the quota (0.5 day assumed).",
+      "category": "ambiguous",
+      "severity": "medium"
+    },
+    {
+      "id": "gap.sso-provider",
+      "description": "Login with the company email account is required but the identity provider and whether SSO is phase-1 scope are unspecified.",
+      "category": "missing-requirement",
+      "severity": "high"
+    },
+    {
+      "id": "gap.chat-channel",
+      "description": "Notification via 'company chat tools' is desired without naming the tool or confirming it is in scope.",
+      "category": "ambiguous",
+      "severity": "low"
+    },
+    {
+      "id": "gap.delegation-scope",
+      "description": "Approval delegation is flagged nice to have; phase-1 inclusion undecided.",
+      "category": "scope",
+      "severity": "medium"
+    },
+    {
+      "id": "gap.org-change-handling",
+      "description": "No rule for in-flight requests when an employee transfers department or leaves the company.",
+      "category": "missing-requirement",
+      "severity": "medium"
+    },
+    {
+      "id": "gap.attendance-integration",
+      "description": "Attendance-device integration is out of scope for phase 1 but must be anticipated; no interface contract is defined.",
+      "category": "integration",
+      "severity": "medium"
+    },
+    {
+      "id": "gap.retention-backup",
+      "description": "'Periodic backup' is required without RPO/RTO, retention period or backup frequency.",
+      "category": "ambiguous",
+      "severity": "medium"
+    },
+    {
+      "id": "gap.data-migration",
+      "description": "Existing paper and Excel request history exists; migration is neither requested nor excluded.",
+      "category": "scope",
+      "severity": "medium"
+    },
+    {
+      "id": "gap.ui-language-vs-docs",
+      "description": "The UI must be Vietnamese while the project documentation language is configured as English; localisation requirements for the product are otherwise unstated.",
+      "category": "ambiguous",
+      "severity": "low"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "3494c325-c423-4564-9ebf-bd22c38a5a2e",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-02-track-and-cancel-own-requests.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-02-track-and-cancel-own-requests.md"
+  },
+  "displayName": "uc-02-track-and-cancel-own-requests",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.347Z",
+  "updatedAt": "2026-09-14T12:28:19.347Z"
+}

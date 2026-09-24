@@ -4,7 +4,7 @@
 #   pre-commit install --hook-type pre-commit --hook-type commit-msg
 #
 # fail_fast: dừng NGAY khi một hook fail, không chạy các hook còn lại.
-# Thứ tự hook bên dưới chính là thứ tự chạy: PII -> gitleaks -> lint -> commit-msg.
+# Thứ tự hook bên dưới chính là thứ tự chạy: PII -> gitleaks -> lint -> ai-spector -> commit-msg.
 fail_fast: true
 
 default_install_hook_types: [pre-commit, commit-msg]
@@ -42,6 +42,16 @@ repos:
         language: script
         pass_filenames: true
         types: [text]
+
+  # --- 3b. ai-spector graph validate (thay cho `npx ai-spector hooks install`) ---
+  - repo: local
+    hooks:
+      - id: ai-spector-graph
+        name: "3b/4 ai-spector graph validate (khi docs/graph đổi)"
+        entry: npx --no-install ai-spector graph validate
+        language: system
+        pass_filenames: false
+        files: ^(docs$|\.ai-spector/graph/)
 
   # --- 4. commit message phải có [SPEC-XXX] ----------------------------
   - repo: local

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "1c9c1c44-a15b-4248-ad54-ea95289f1f8b",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/04-system-features/f-03-annual-leave-balance-management.md",
+  "repoDocs": {
+    "en": "docs/srs/en/04-system-features/f-03-annual-leave-balance-management.md"
+  },
+  "displayName": "f-03-annual-leave-balance-management",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.350Z",
+  "updatedAt": "2026-09-14T12:28:19.350Z"
+}

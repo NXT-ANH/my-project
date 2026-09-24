@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "ai-spector": "^0.9.31"
+  },
+  "optionalDependencies": {
+    "@kaopiz/devkit": "^0.24.0",
+    "@kaopiz/devkit-handbook": "^0.8.4",
+    "@kaopiz/devkit-hub": "^0.17.0",
+    "@kaopiz/devkit-sync": "^0.14.0",
+    "@kaopiz/devkit-task-runner": "^0.4.1",
+    "@kaopiz/vibe-coding-mcp": "^0.9.0"
+  },
+  "scripts": {
+    "handbook:sync-data": "node node_modules/@kaopiz/devkit-handbook/scripts/sync-from-cursor.mjs --project .",
+    "handbook:tools": "node node_modules/@kaopiz/devkit-handbook/scripts/build-tools-devkit.mjs --project .",
+    "handbook:dashboard": "node node_modules/@kaopiz/devkit-handbook/scripts/build-workflow-dashboard.mjs --project .",
+    "handbook:sync:core": "npm run handbook:sync-data && npm run handbook:tools",
+    "handbook:sync": "npm run handbook:sync-data && npm run handbook:tools && npm run handbook:dashboard",
+    "handbook:serve": "npm run devkit:sync && bash node_modules/@kaopiz/devkit-handbook/scripts/serve-handbook.sh",
+    "devkit:sync:only": "node node_modules/@kaopiz/devkit-sync/dist/cli.js --project .",
+    "devkit:sync": "node node_modules/@kaopiz/devkit-sync/dist/cli.js --project . && npm run handbook:sync",
+    "kaopiz-devkit": "node node_modules/@kaopiz/devkit/dist/cli.js",
+    "devkit-task-runner": "node node_modules/@kaopiz/devkit-task-runner/dist/cli.js",
+    "devkit:mcp-sync": "node node_modules/@kaopiz/devkit/dist/cli.js sync --source mcp --targets cursor,claude",
+    "devkit:mcp-start": "node node_modules/@kaopiz/vibe-coding-mcp/dist/index.js"
+  }
+}

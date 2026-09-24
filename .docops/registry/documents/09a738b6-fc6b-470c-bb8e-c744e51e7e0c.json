@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "09a738b6-fc6b-470c-bb8e-c744e51e7e0c",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-10-search-and-filter-requests.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-10-search-and-filter-requests.md"
+  },
+  "displayName": "uc-10-search-and-filter-requests",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.349Z",
+  "updatedAt": "2026-09-14T12:28:19.349Z"
+}

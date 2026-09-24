@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "28440d96-30c6-495f-9df6-a7b15fc36e8e",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/03-use-cases/uc-03-approve-or-reject-a-request.md",
+  "repoDocs": {
+    "en": "docs/srs/en/03-use-cases/uc-03-approve-or-reject-a-request.md"
+  },
+  "displayName": "uc-03-approve-or-reject-a-request",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.348Z",
+  "updatedAt": "2026-09-14T12:28:19.348Z"
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "653d085c-464b-46ea-a1e7-3db8e1d55086",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/1-introduction.md",
+  "repoDocs": {
+    "en": "docs/srs/en/1-introduction.md"
+  },
+  "displayName": "1-introduction",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.351Z",
+  "updatedAt": "2026-09-14T12:28:19.351Z"
+}

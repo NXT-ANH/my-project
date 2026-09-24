@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "261ac701-b8f5-4820-8464-6671fdfc8daa",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/3-use-cases.md",
+  "repoDocs": {
+    "en": "docs/srs/en/3-use-cases.md"
+  },
+  "displayName": "3-use-cases",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.351Z",
+  "updatedAt": "2026-09-14T12:28:19.351Z"
+}

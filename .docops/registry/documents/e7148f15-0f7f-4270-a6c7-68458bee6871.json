@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "entityId": "e7148f15-0f7f-4270-a6c7-68458bee6871",
+  "kind": "document",
+  "docType": "SRS",
+  "logicalPath": "srs/04-system-features/f-05-leave-calendar-and-request-lookup.md",
+  "repoDocs": {
+    "en": "docs/srs/en/04-system-features/f-05-leave-calendar-and-request-lookup.md"
+  },
+  "displayName": "f-05-leave-calendar-and-request-lookup",
+  "aliases": [],
+  "createdAt": "2026-09-14T12:28:19.351Z",
+  "updatedAt": "2026-09-14T12:28:19.351Z"
+}

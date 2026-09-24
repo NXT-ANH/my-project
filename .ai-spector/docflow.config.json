@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "languages": [
+    {
+      "code": "en",
+      "label": "English"
+    }
+  ],
+  "readiness": {
+    "profile": "general",
+    "standards": [
+      "ISO-29148"
+    ],
+    "docTypes": {
+      "srs": {
+        "profile": "general",
+        "enabled": true
+      },
+      "basic-design": {
+        "profile": "general",
+        "enabled": true
+      }
+    },
+    "lastScan": {
+      "profile": "general",
+      "docType": "srs",
+      "scannedAt": "2026-09-14T12:28:08.697Z"
+    }
+  },
+  "paths": {
+    "graph": ".ai-spector/graph/traceability.graph.json",
+    "registry": ".ai-spector/registry/section-registry.json",
+    "templates": ".ai-spector/templates"
+  },
+  "packs": {
+    "srs": "builtin",
+    "basicDesign": "builtin"
+  }
+}

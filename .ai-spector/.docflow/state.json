@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "initializedAt": "2026-09-14T11:36:47.100Z",
+  "analysis": {
+    "lastRunAt": "2026-09-14T11:42:12.432085Z",
+    "graphPreparedAt": "2026-09-24T04:06:07.504Z",
+    "indexRefreshedAt": "2026-09-24T04:06:07.505Z",
+    "graphMergedAt": "2026-09-24T04:06:07.508Z",
+    "lastMergeSource": "/Users/lwemho/Desktop/SDLC/my-project/.ai-spector/.docflow/analysis/knowledge.json",
+    "dataSource": "docs/data-source",
+    "scopeHash": "9e060da96f3c97e5"
+  },
+  "index": {
+    "lastRunAt": "2026-09-24T04:06:08.653Z",
+    "sourceHashes": {
+      "srs": "ca645e222827ba3b",
+      "basicDesign": "e3b0c44298fc1c14",
+      "detailDesign": "e3b0c44298fc1c14",
+      "dataSource": "9e060da96f3c97e5"
+    }
+  },
+  "docsSemantic": {
+    "lastRunAt": "2026-09-24T04:06:08.607Z",
+    "sourceHashes": {
+      "srs": "ca645e222827ba3b",
+      "basicDesign": "e3b0c44298fc1c14",
+      "detailDesign": "e3b0c44298fc1c14"
+    },
+    "lastStats": {
+      "useCases": 15,
+      "features": 8,
+      "actors": 8,
+      "detailDocuments": 23,
+      "detailSections": 287,
+      "srsDetailDocuments": 23,
+      "bdDetailDocuments": 0,
+      "ddDetailDocuments": 0,
+      "filesScanned": 32
+    }
+  }
+}
